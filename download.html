@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="en-US">
+<head><style>img.lazy{min-height:1px}</style><link rel="preload" href="https://d3e3a9wpte0df0.cloudfront.net/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js.gzip" as="script">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<meta name="google-site-verification" content="VAjvJ0zqZkVkxdb6L085S3OjEeTwbmSTDW7vTZXxTls"/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://d3e3a9wpte0df0.cloudfront.net"><link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&family=Play:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&family=Play:wght@400;700&display=swap"></noscript>
+<style>
+.container-fluid,.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.container-fluid{padding-right:2rem;padding-left:2rem}.row{-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:flex;-webkit-box-flex:0;flex:0 1 auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.row.reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;flex-direction:row-reverse}.col.reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;flex-direction:column-reverse}.col-xs,.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:0;flex:0 0 auto;padding-right:15px;padding-left:15px}.col-xs{-webkit-box-flex:1;flex-grow:1;flex-basis:0;max-width:100%}.col-xs-1{flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{flex-basis:25%;max-width:25%}.col-xs-4{flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{flex-basis:50%;max-width:50%}.col-xs-7{flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{flex-basis:75%;max-width:75%}.col-xs-10{flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-box-pack:start;justify-content:flex-start;text-align:start}.center-xs{-webkit-box-pack:center;justify-content:center;text-align:center}.end-xs{-webkit-box-pack:end;justify-content:flex-end;text-align:end}.top-xs{-webkit-box-align:start;align-items:flex-start}.middle-xs{-webkit-box-align:center;align-items:center}.bottom-xs{-webkit-box-align:end;align-items:flex-end}.around-xs{justify-content:space-around}.between-xs{-webkit-box-pack:justify;justify-content:space-between}.first-xs{-webkit-box-ordinal-group:0;order:-1}.last-xs{-webkit-box-ordinal-group:2;order:1}@media only screen and (min-width: 480px){.container{width:480px}}@media only screen and (min-width: 630px){.container{width:630px}}@media only screen and (min-width: 630px) and (min-width: 660px){.container{width:660px}}@media only screen and (min-width: 630px){.col-sm,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:0;flex:0 0 auto;padding-right:15px;padding-left:15px}.col-sm{-webkit-box-flex:1;flex-grow:1;flex-basis:0;max-width:100%}.col-sm-1{flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{flex-basis:25%;max-width:25%}.col-sm-4{flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{flex-basis:50%;max-width:50%}.col-sm-7{flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{flex-basis:75%;max-width:75%}.col-sm-10{flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-box-pack:start;justify-content:flex-start;text-align:start}.center-sm{-webkit-box-pack:center;justify-content:center;text-align:center}.end-sm{-webkit-box-pack:end;justify-content:flex-end;text-align:end}.top-sm{-webkit-box-align:start;align-items:flex-start}.middle-sm{-webkit-box-align:center;align-items:center}.bottom-sm{-webkit-box-align:end;align-items:flex-end}.around-sm{justify-content:space-around}.between-sm{-webkit-box-pack:justify;justify-content:space-between}.first-sm{-webkit-box-ordinal-group:0;order:-1}.last-sm{-webkit-box-ordinal-group:2;order:1}}@media only screen and (min-width: 970px){.container{width:970px}.col-md,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md-offset-0,.col-md-offset-1,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:0;flex:0 0 auto;padding-right:15px;padding-left:15px}.col-md{-webkit-box-flex:1;flex-grow:1;flex-basis:0;max-width:100%}.col-md-1{flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{flex-basis:25%;max-width:25%}.col-md-4{flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{flex-basis:50%;max-width:50%}.col-md-7{flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{flex-basis:75%;max-width:75%}.col-md-10{flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-box-pack:start;justify-content:flex-start;text-align:start}.center-md{-webkit-box-pack:center;justify-content:center;text-align:center}.end-md{-webkit-box-pack:end;justify-content:flex-end;text-align:end}.top-md{-webkit-box-align:start;align-items:flex-start}.middle-md{-webkit-box-align:center;align-items:center}.bottom-md{-webkit-box-align:end;align-items:flex-end}.around-md{justify-content:space-around}.between-md{-webkit-box-pack:justify;justify-content:space-between}.first-md{-webkit-box-ordinal-group:0;order:-1}.last-md{-webkit-box-ordinal-group:2;order:1}}@media only screen and (min-width: 1280px){.container{width:1200px}.col-lg,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:0;flex:0 0 auto;padding-right:15px;padding-left:15px}.col-lg{-webkit-box-flex:1;flex-grow:1;flex-basis:0;max-width:100%}.col-lg-1{flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{flex-basis:25%;max-width:25%}.col-lg-4{flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{flex-basis:50%;max-width:50%}.col-lg-7{flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{flex-basis:75%;max-width:75%}.col-lg-10{flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-box-pack:start;justify-content:flex-start;text-align:start}.center-lg{-webkit-box-pack:center;justify-content:center;text-align:center}.end-lg{-webkit-box-pack:end;justify-content:flex-end;text-align:end}.top-lg{-webkit-box-align:start;align-items:flex-start}.middle-lg{-webkit-box-align:center;align-items:center}.bottom-lg{-webkit-box-align:end;align-items:flex-end}.around-lg{justify-content:space-around}.between-lg{-webkit-box-pack:justify;justify-content:space-between}.first-lg{-webkit-box-ordinal-group:0;order:-1}.last-lg{-webkit-box-ordinal-group:2;order:1}}.header-menu{-webkit-box-align:center;align-items:center;display:none;padding:0;margin:0;height:47px}@media (min-width: 630px){.header-menu{height:52px}}@media (min-width: 970px){.header-menu{display:-webkit-box;display:flex}}.header-menu>li{position:relative;padding:30px 22px;list-style-type:none}@media (min-width: 970px){.header-menu>li{padding:12px 13px}}@media (min-width: 1280px){.header-menu>li{padding:15px 20px}}.header-menu>li:first-child{margin-left:0}.header-menu>li.active a{font-weight:600}.header-menu>li>a{color:#4a5f6f;text-align:center;font-size:1.14286em;-webkit-transition:.2s all;-o-transition:.2s all;transition:.2s all}@media (min-width: 970px) and (max-width: 1279px){.header-menu>li>a{font-size:1em}}@media (min-width: 1280px){.header-menu>li>a{font-size:1em}}.header-menu>li>a:after{content:attr(title);display:block;height:0;visibility:hidden;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none;pointer-events:none;font-weight:600}@media speech{.header-menu>li>a:after{display:none}}.header-menu>li>a:hover{font-weight:600;cursor:pointer}.header-menu>li.current-menu-item>a,.header-menu>li.current-menu-parent>a{color:#3cd5af}.header-menu>li:last-of-type .sub-menu{left:auto;right:0;-webkit-transform:translate(0);transform:translate(0)}.header-menu .search-menu-item .icon-search{cursor:pointer;max-width:40px;font-size:1.4375em}.header{z-index:990;position:absolute;padding:15px 0;-webkit-box-align:center;align-items:center;width:100%;left:0;right:0;top:0;max-width:100%;overflow:hidden}@media (min-width: 480px){.header{padding-top:20px;padding-bottom:20px}}@media (min-width: 970px){.header{-webkit-box-align:end;align-items:flex-end;padding-top:20px;padding-bottom:20px;overflow:visible}}@media (min-width: 1280px){.header{padding-top:25px;padding-bottom:25px}}@media (max-width: 629px){.header .container{width:100%}}.header .lang-menu{position:absolute;right:-40px;top:-6px}.header.header--transparent{background-color:transparent}.header.header--transparent .logo{color:#fff}.header.header--transparent .header-menu>li>a{color:#f4f4f4}.header.header--transparent .header-menu>li.current-menu-parent>a{color:#3cd5af}.header.header--transparent .lang-menu{color:rgba(255,255,255,0.43)}.header.header--transparent .lang-menu__item--active .lang-menu__link{color:#fff}.header.header--transparent .lang-menu__link{color:rgba(255,255,255,0.43)}.header.header--transparent .lang-menu__link:hover{color:#3cd5af}.header.fixed--nav{position:fixed;padding-top:11px;padding-bottom:11px;z-index:1000;background-color:#ffffff;border-bottom:1px solid #ededed;top:-100px;left:0;right:0;opacity:0;-webkit-transition:top 0.33s ease;-o-transition:top 0.33s ease;transition:top 0.33s ease}@media (min-width: 970px){.header.fixed--nav{z-index:-1}}.header.fixed--nav .logo{color:#98a1a8}.header.fixed--nav.nav-up{opacity:0;visibility:hidden}.header.fixed--nav.nav-down{opacity:1;visibility:visible;top:0;z-index:1000}.header.fixed--nav .header-menu>li{padding:35px 13px}.header.fixed--nav .header-menu>li.current-menu-parent>a{color:#3cd5af}.header.fixed--nav .header-menu>li a{color:#263745}.header.fixed--nav .header-menu>li .sub-menu li:hover a{color:#3cd5af}.header.mobile-active{position:fixed;z-index:1000;opacity:1;visibility:visible;top:0 !important;border-color:transparent;background:#fff;-webkit-transition:0.01s all;-o-transition:0.01s all;transition:0.01s all;-webkit-transition-delay:0.25s;-o-transition-delay:0.25s;transition-delay:0.25s}.header.mobile-active:after{left:0}.home-page .header-media-bg video{display:none}@media (min-width: 630px){.home-page .header-media-bg video{display:block}}.header-media-bg{z-index:-1;position:absolute;width:100%;height:100%;overflow:hidden;top:0;left:0;background-size:cover;background-position:center;background-color:#1f2b3c}.header-media-bg video{position:absolute;width:100%;min-height:100%;left:50%;top:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}.header-media-bg:before{content:'';position:absolute;width:100%;display:block;background-color:rgba(37,55,70,0.4);z-index:3;top:0;bottom:0;-webkit-transition:0.3s all ease;-o-transition:0.3s all ease;transition:0.3s all ease;opacity:1}.header-media-bg.playing:before{opacity:0}.col-buttons{text-align:right;position:relative}.col-buttons .js-open-search{vertical-align:middle;padding-right:20px;height:28px;max-width:62px;display:none}.col-buttons .js-open-search.open:after{content:'';position:absolute;border-left:4px solid transparent;border-right:4px solid transparent;border-bottom:6px solid #44dab8;z-index:3;bottom:-16px;left:6px;opacity:1}.col-buttons .js-open-search.open:before{content:'';position:absolute;width:100%;height:30px;left:-50%;bottom:-20px}@media (min-width: 1280px){.col-buttons .js-open-search.open:after{bottom:-14px}}@media (min-width: 970px){.col-buttons .js-open-search{display:inline-block}}@media (max-width: 1279px){.col-buttons .js-open-search{padding-right:10px}.col-buttons .js-open-search.open:after{left:16px}}.col-buttons .btn-get{display:none;font-size:1.125em;padding:6px 11px;text-align:center}@media (min-width: 970px){.col-buttons .btn-get{display:inline-block}}@media (min-width: 1280px){.col-buttons .btn-get{min-width:137px}}.col-buttons .icon-search{cursor:pointer;fill:#3cd5af;stroke:#3cd5af}@media (min-width: 970px){.col-buttons{display:block}}.header-row{position:relative}.navigation-wrap{display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center}.navigation-wrap .main-navigation{margin-left:50px}@media (max-width: 1060px){.navigation-wrap .main-navigation{margin-left:5px !important}}@media (max-width: 1060px){.navigation-wrap{-webkit-box-pack:center;justify-content:center}}@media (max-width: 969px){.navigation-wrap{-webkit-box-pack:end;justify-content:flex-end}}.search-btn{display:none;padding:0;margin:0 15px 0 0;height:26px;border:0;outline:none;background:none}.search-btn .icon-svg{display:block}@media (min-width: 970px){.search-btn{margin:0 15px 0 0;display:inline-block}}@media (min-width: 1280px){.search-btn{margin:0 20px 0 0;height:17px}}.logo{text-align:justify;position:relative;color:#98a1a8;display:block;width:120px;height:25px}.logo img,.logo svg{width:100%;display:block}@media (min-width: 630px){.logo{width:160px}}@media (min-width: 970px){.logo{width:175px;height:54px}}.lang-menu{position:absolute;bottom:100%;right:0;list-style:none;margin:0 0 4px;padding:0;text-align:center;font-size:1.14286em;font-weight:600;line-height:1.5;color:#243746;display:none}@media (min-width: 970px){.lang-menu{display:block}}@media (min-width: 1280px){.lang-menu{right:4px;margin-bottom:9px;font-size:1em}}.lang-menu__item{display:block}@media (min-width: 970px) and (max-width: 1279px){.lang-menu__item{font-size:14px}}.lang-menu__item--active .lang-menu__link{color:#3cd5af}.lang-menu__link{text-decoration:none;color:#243746}.lang-menu__link:hover{color:#3cd5af}.submenu-wrapper{position:absolute;-webkit-transition:-webkit-transform 0.2s;transition:-webkit-transform 0.2s;-o-transition:transform 0.2s;transition:transform 0.2s;transition:transform 0.2s, -webkit-transform 0.2s;-webkit-transition-timing-function:cubic-bezier(0, 0, 0.58, 1);-o-transition-timing-function:cubic-bezier(0, 0, 0.58, 1);transition-timing-function:cubic-bezier(0, 0, 0.58, 1);-webkit-transform:translateX(250px);transform:translateX(250px);left:0;padding:0 15px}.submenu-wrapper.opened{-webkit-transition:-webkit-transform 0.2s;transition:-webkit-transform 0.2s;-o-transition:transform 0.2s;transition:transform 0.2s;transition:transform 0.2s, -webkit-transform 0.2s;-webkit-transition-timing-function:cubic-bezier(0.42, 0, 1, 1);-o-transition-timing-function:cubic-bezier(0.42, 0, 1, 1);transition-timing-function:cubic-bezier(0.42, 0, 1, 1)}.submenu-wrapper.opened .submenu__inner-content{width:390px}.submenu-wrapper.opened .submenu__inner-sidebar{background-color:#f6f8fa}@media screen and (max-width: 1279px){.submenu-wrapper.opened .submenu:nth-child(4) .submenu__inner .submenu__inner-content{width:279px}}#fixed-header.nav-down .submenu-wrapper{top:66px}.submenu{display:none;-webkit-box-shadow:50px 50px 100px 0 rgba(0,0,0,0.15);box-shadow:50px 50px 100px 0 rgba(0,0,0,0.15)}.submenu:before{position:relative;display:block;content:"";top:0;left:0;height:6px;width:100%;background-color:#a5e6da}.submenu__inner{display:-webkit-box;display:flex;background-color:#fff}.submenu__inner-sidebar{position:relative;width:260px;background-color:#fff;-webkit-transition:.4s;-o-transition:.4s;transition:.4s;padding:20px 0 !important;border-left:1px solid #F0F8FF;border-bottom:1px solid #F0F8FF;z-index:1}.submenu__inner-sidebar:before{position:absolute;display:block;content:'';width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:10px solid #a5e6da;top:-14px;left:125px}.submenu__inner-sidebar ul{position:relative;left:-1px;width:calc(100% + 1px)}.submenu__inner-sidebar li.active a{color:#3cd5af;font-weight:700}.submenu__inner-sidebar li.active a:after{opacity:1;border-right:2px solid #44dab8;border-top:2px solid #44dab8}.submenu__inner-sidebar a{padding:11px 25px 10px 40px;color:#263745;-webkit-transition:0.2s all;-o-transition:0.2s all;transition:0.2s all;width:100%;position:relative;cursor:pointer}.submenu__inner-sidebar a.menu-has-children:after{opacity:0.3;width:7px;height:7px;-webkit-transform:translate(-1px, -6px) rotate(45deg);transform:translate(-1px, -6px) rotate(45deg);content:'';display:block;right:15px;position:absolute;top:50%;-webkit-transition:0.2s all;-o-transition:0.2s all;transition:0.2s all;border-right:2px solid #243646;border-top:2px solid #243646}.submenu__inner-sidebar a:hover{color:#3cd5af;font-weight:700}.submenu__inner-sidebar a:hover:after{opacity:1;border-color:#44dab8}.submenu__inner-content{-webkit-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;-webkit-transition-delay:0.2s;-o-transition-delay:0.2s;transition-delay:0.2s;width:0;background-color:#fff;border-bottom:1px solid #F0F8FF;overflow:hidden;padding:15px 0;max-width:390px}.submenu__inner-content .submenu-layer{visibility:hidden;opacity:0;-webkit-transition:opacity 0.2s;-o-transition:opacity 0.2s;transition:opacity 0.2s;padding:0 30px;max-height:0}.submenu__inner-content .submenu-layer.active{visibility:visible;opacity:1;max-height:100%;width:390px}.submenu__inner-content a{font-size:.875em;font-weight:normal;margin-top:13px;padding:0 10px;margin-bottom:9px;color:#263745;width:100%;-webkit-transition:.2s;-o-transition:.2s;transition:.2s}.submenu__inner-content a:hover{color:#44dab8;font-weight:bold}.mobile-sidebar-menu{-webkit-transition:0.3s all ease;-o-transition:0.3s all ease;transition:0.3s all ease;position:fixed;right:-100%;left:100%;padding-top:65px;bottom:0;z-index:999;background-color:#fff;overflow-x:hidden;overflow-y:auto;display:-webkit-box;display:flex;flex-wrap:wrap;top:-100px;padding-bottom:100px;-webkit-transform:translateY(100px);transform:translateY(100px)}#svg-logo__title{fill:#3cd5af}#svg-logo__description{fill:currentColor;display:none}@media (min-width: 630px){#svg-logo__description{display:block}}p{margin-top:0;margin-bottom:.625em}.h1,.h2,.h3,.h4,.h5,.h6{margin-bottom:20px;margin-top:0}@media (max-width: 479px){.h1,.h2,.h3,.h4,.h5,.h6{text-align:center}}.h1{font-size:2.85714em;line-height:1;font-weight:bold;font-family:"Play",Arial}@media (min-width: 970px){.h1{font-size:4.28571em}}@media (min-width: 1280px){.h1{font-size:4.5em}}.h2{font-family:"Play",Arial;font-size:1.92857em;line-height:1.25;font-weight:bold;margin:0 0 .53846em}@media (min-width: 630px){.h2{font-size:2.28571em}}@media (min-width: 970px){.h2{font-size:2.85714em;line-height:1.3}}@media (min-width: 1280px){.h2{font-size:3.25em;line-height:1.15}}.h3{font-weight:bold;font-family:"Play",Arial;font-size:1.71429em;line-height:1.333333}@media (min-width: 970px){.h3{font-size:2.28571em;line-height:1.25}}@media (min-width: 1280px){.h3{font-size:2.625em;line-height:1.2}}.h4{font-size:1.28571em;line-height:1.333333;font-weight:bold}@media (min-width: 970px){.h4{font-size:1.71429em}}@media (min-width: 1280px){.h4{font-size:2em;line-height:1.285714}}.h5{font-size:1.14286em;line-height:1.5;font-weight:bold}@media (min-width: 970px){.h5{font-size:1.28571em;line-height:1.333333}}@media (min-width: 1280px){.h5{font-size:1.25em;line-height:1.2}}.h6{font-size:1.14286em;line-height:1.5;font-weight:normal}@media (min-width: 970px){.h6{font-size:1.28571em;line-height:1.333333}}@media (min-width: 1280px){.h6{font-size:1.25em;line-height:1.2}}*{-webkit-box-sizing:border-box;box-sizing:border-box}body{color:#263745;font-family:"Open Sans",Arial;margin:0 auto !important;background-color:#fff;font-size:14px;line-height:1.71429;overflow-x:hidden}@media (min-width: 1280px){body{font-size:16px;line-height:1.5}}a{display:inline-block;text-decoration:none;background-color:transparent;outline:0;color:inherit}a:hover,a :focus{outline:0}.btn-clear,.btn-filled{font-weight:700;font-size:1.25em;border:2px solid #3cd5af;color:#3cd5af;background-color:transparent;line-height:1.2}.row{-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:flex;-webkit-box-flex:0;flex:0 1 auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.bottom-fields .form-label{position:relative}.agree{display:none}.preload,.lazy:not(.loaded):not([data-was-processed='true']),div.wpcf7 .ajax-loader,.posts-loading{position:relative}.preload:after,.lazy:not(.loaded):not([data-was-processed='true']):after,div.wpcf7 .ajax-loader:after,.posts-loading:after{content:'';position:absolute;top:calc(50% - 7px);left:calc(50% - 7px);width:8px;height:8px;border:3px solid #44dab8;border-right-color:transparent;border-radius:50%;-webkit-animation:rotate-simple .8s infinite linear;animation:rotate-simple .8s infinite linear}@-webkit-keyframes rotate-simple{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-simple{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}#geo{min-height:500px}@media (min-width: 970px){.mobile-menu-btn{display:none}}#page{overflow:hidden}.wow{visibility:hidden}@media (min-width: 630px){.section__title{margin-bottom:40px}}.text-block a:not(.btn-filled):not(.btn-clear){background:-webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat;background:-o-linear-gradient(#3cd5af, #3cd5af) no-repeat,-o-linear-gradient(#3cd5af, #3cd5af) no-repeat;background:linear-gradient(#3cd5af, #3cd5af) no-repeat,linear-gradient(#3cd5af, #3cd5af) no-repeat;background-size:0 27%, 100% 2px;background-position:-100% 60%, 0 bottom;text-decoration:none;color:inherit;-webkit-transition:0.2s all;-o-transition:0.2s all;transition:0.2s all}.text-block a:not(.btn-filled):not(.btn-clear):hover{color:#3cd5af}.tabs-links a{padding:5px 10px;display:inline;background:-webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat;background:-o-linear-gradient(#3cd5af, #3cd5af) no-repeat,-o-linear-gradient(#3cd5af, #3cd5af) no-repeat;background:linear-gradient(#3cd5af, #3cd5af) no-repeat,linear-gradient(#3cd5af, #3cd5af) no-repeat;background-size:0 27%, 100% 2px;background-position:-100% 60%, 0 bottom;-webkit-transition:all cubic-bezier(1, 0, 0, 1) 400ms;-o-transition:all cubic-bezier(1, 0, 0, 1) 400ms;transition:all cubic-bezier(1, 0, 0, 1) 400ms;text-decoration:none;color:inherit;color:#263745;background-color:transparent}.tabs-links a:hover{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tabs-links a.active{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.link-hover-line{background:-webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat;background:-o-linear-gradient(#3cd5af, #3cd5af) no-repeat,-o-linear-gradient(#3cd5af, #3cd5af) no-repeat;background:linear-gradient(#3cd5af, #3cd5af) no-repeat,linear-gradient(#3cd5af, #3cd5af) no-repeat;background-size:0 27%, 100% 2px;background-position:-100% 60%, 0 bottom;text-decoration:none;color:inherit;-webkit-transition:0.2s all;-o-transition:0.2s all;transition:0.2s all}.link-hover-line:hover{color:#3cd5af}.text-block p{margin-bottom:1.5em}.tabs-links li{display:inline-block}.tabs-links li:not(:last-of-type){margin-right:12px}@media (min-width: 480px){.tabs-links li:not(:last-of-type){margin-right:26px}}.tabs-links a{font-weight:600}.tabs-links a.case-tab-link{padding:5px 10px;display:inline;background:-webkit-gradient(linear, left top, left bottom, from(#ac69bd), to(#ac69bd)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#ac69bd), to(#ac69bd)) no-repeat;background:-o-linear-gradient(#ac69bd, #ac69bd) no-repeat,-o-linear-gradient(#ac69bd, #ac69bd) no-repeat;background:linear-gradient(#ac69bd, #ac69bd) no-repeat,linear-gradient(#ac69bd, #ac69bd) no-repeat;background-size:0 27%, 100% 2px;background-position:-100% 60%, 0 bottom;-webkit-transition:all cubic-bezier(1, 0, 0, 1) 400ms;-o-transition:all cubic-bezier(1, 0, 0, 1) 400ms;transition:all cubic-bezier(1, 0, 0, 1) 400ms;text-decoration:none;color:inherit}.tabs-links a.case-tab-link:hover{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tabs-links a.case-tab-link.active{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tabs-links a.blog-tab-link{padding:5px 10px;display:inline;background:-webkit-gradient(linear, left top, left bottom, from(#95e171), to(#95e171)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#95e171), to(#95e171)) no-repeat;background:-o-linear-gradient(#95e171, #95e171) no-repeat,-o-linear-gradient(#95e171, #95e171) no-repeat;background:linear-gradient(#95e171, #95e171) no-repeat,linear-gradient(#95e171, #95e171) no-repeat;background-size:0 27%, 100% 2px;background-position:-100% 60%, 0 bottom;-webkit-transition:all cubic-bezier(1, 0, 0, 1) 400ms;-o-transition:all cubic-bezier(1, 0, 0, 1) 400ms;transition:all cubic-bezier(1, 0, 0, 1) 400ms;text-decoration:none;color:inherit}.tabs-links a.blog-tab-link:hover{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tabs-links a.blog-tab-link.active{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tabs-links a.news-tab-link{padding:5px 10px;display:inline;background:-webkit-gradient(linear, left top, left bottom, from(#6abce8), to(#6abce8)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#6abce8), to(#6abce8)) no-repeat;background:-o-linear-gradient(#6abce8, #6abce8) no-repeat,-o-linear-gradient(#6abce8, #6abce8) no-repeat;background:linear-gradient(#6abce8, #6abce8) no-repeat,linear-gradient(#6abce8, #6abce8) no-repeat;background-size:0 27%, 100% 2px;background-position:-100% 60%, 0 bottom;-webkit-transition:all cubic-bezier(1, 0, 0, 1) 400ms;-o-transition:all cubic-bezier(1, 0, 0, 1) 400ms;transition:all cubic-bezier(1, 0, 0, 1) 400ms;text-decoration:none;color:inherit}.tabs-links a.news-tab-link:hover{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tabs-links a.news-tab-link.active{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tabs-links a .all-news-tab-link{padding:5px 10px;display:inline;background:-webkit-gradient(linear, left top, left bottom, from(#44dab8), to(#44dab8)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#44dab8), to(#44dab8)) no-repeat;background:-o-linear-gradient(#44dab8, #44dab8) no-repeat,-o-linear-gradient(#44dab8, #44dab8) no-repeat;background:linear-gradient(#44dab8, #44dab8) no-repeat,linear-gradient(#44dab8, #44dab8) no-repeat;background-size:0 27%, 100% 2px;background-position:-100% 60%, 0 bottom;-webkit-transition:all cubic-bezier(1, 0, 0, 1) 400ms;-o-transition:all cubic-bezier(1, 0, 0, 1) 400ms;transition:all cubic-bezier(1, 0, 0, 1) 400ms;text-decoration:none;color:inherit}.tabs-links a .all-news-tab-link:hover{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tabs-links a .all-news-tab-link.active{background-size:100% 100%, 0 2px;background-position:0 100%, 0 bottom;color:#fff}.tab-pane{display:none}.tab-pane.in.active{display:block}.mfp-hide{display:none !important}@media (max-width: 969px){.our-story-art .text-block .h1:first-child,.our-story-art .text-block .h2:first-child,.our-story-art .text-block .h3:first-child,.our-story-art .text-block .h4:first-child,.our-story-art .text-block .h5:first-child,.our-story-art .text-block .h6:first-child{margin-top:0}}.posts-overview{padding-top:110px}@media (min-width: 630px){.posts-overview{padding-top:150px}}.cookie-notice{position:fixed;left:0;right:0;visibility:hidden;bottom:0;-webkit-transform:translateY(100%);transform:translateY(100%)}.heat-sect{min-height:100vh;position:relative;background:center no-repeat;background-size:cover !important;background-color:#415262;overflow:hidden;color:#fff;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;flex-wrap:nowrap;padding:70px 0 0;padding-top:62px}@media (min-width: 480px){.heat-sect{padding-top:82px}}@media (min-width: 970px){.heat-sect{padding-top:114px}}@media (max-width: 629px){.heat-sect{text-align:center}}.heat-sect__row{height:100%}.heat-sect .article__lead{margin-left:0;margin-top:0;margin-bottom:0;font-size:.875em;max-width:596px}@media (min-width: 1280px){.heat-sect .article__lead{font-size:1em;max-width:700px}}.heat-sect .article__title{margin-bottom:35px;font-size:2.5em}@media (min-width: 630px){.heat-sect .article__title{text-align:left;margin-bottom:10px}}@media (min-width: 970px){.heat-sect .article__title{font-size:3.125em;margin-bottom:20px}}@media (min-width: 1280px){.heat-sect .article__title{font-size:3.5em;margin-bottom:30px}}.heat-sect .article__subtitle{font-weight:700;margin-bottom:20px;font-size:1.5em}@media (min-width: 630px){.heat-sect .article__subtitle{margin-bottom:15px;text-align:left;max-width:355px}}@media (min-width: 970px){.heat-sect .article__subtitle{max-width:457px;font-size:2em;margin-bottom:12px}}@media (min-width: 1280px){.heat-sect .article__subtitle{max-width:670px;font-size:1.75em;margin-bottom:20px}}.heat-sect.full-width .article__title,.heat-sect.full-width .article__subtitle{max-width:99% !important}.heat-sect__btn-link{margin-top:50px;padding:11px 23px;margin-bottom:20px !important}.heat-sect__btn-chevron-down{display:block;position:absolute;left:50%;bottom:45px;-webkit-transform:translate(-50%, 0);transform:translate(-50%, 0);padding:15px}@media (max-width: 629px){.heat-sect__btn-chevron-down{bottom:20px}}.heat-sect__btn-chevron-down svg{display:block}.heat-sect__btn-chevron-down path{fill:#3cd5af;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.heat-sect__btn-chevron-down .heat-sect__arrow-middle{opacity:0.7}.heat-sect__btn-chevron-down .heat-sect__arrow-top{opacity:0.3}.heat-sect__btn-chevron-down:hover .heat-sect__arrow-bottom{-webkit-animation-name:opacity-blink;animation-name:opacity-blink;-webkit-animation-duration:.9s;animation-duration:.9s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-delay:.3s;animation-delay:.3s}.heat-sect__btn-chevron-down:hover .heat-sect__arrow-middle{-webkit-animation-name:opacity-blink;animation-name:opacity-blink;-webkit-animation-duration:.9s;animation-duration:.9s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.heat-sect__btn-chevron-down:hover .heat-sect__arrow-top{-webkit-animation-delay:-.3s;animation-delay:-.3s;-webkit-animation-name:opacity-blink;animation-name:opacity-blink;-webkit-animation-duration:.9s;animation-duration:.9s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes opacity-blink{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}@keyframes opacity-blink{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}#heat-sect__more-arrows{width:30px;height:20px}@media (max-height: 450px) and (min-width: 480px), (max-height: 500px) and (min-width: 1000px){.heat-sect .article__lead{display:none}.mobile-heat-description,.mobile-heat-description.hidden-md{display:block}.heat-sect__btn-chevron-down{bottom:20px}}@media (max-width: 629px), (max-height: 450px) and (min-width: 480px), (max-height: 500px) and (min-width: 1000px){.mobile-heat-description+article.article{margin-top:0}}.heat-sect--noah .heat-rocket{display:none}@media (min-width: 970px){.heat-sect--noah .heat-rocket{display:block}}.heat-sect--noah .heat-rocket img,.heat-sect--noah .heat-rocket svg{max-width:100%}.blog-hero{position:relative;padding:0 0 20px;background:#768693 center no-repeat;background-size:cover;aspect-ratio:19/6;padding-top:62px}@media (min-width: 480px){.blog-hero{padding-top:82px}}@media (min-width: 970px){.blog-hero{padding-top:114px}}@media (min-width: 970px){.blog-hero{padding-bottom:30px}}.blog-hero .fw-slider__image-mask{z-index:0}.blog-hero__content{position:relative;margin-top:70px;text-align:center;color:#fff}@media (min-width: 630px){.blog-hero__content{margin-top:18px;max-width:552px}}@media (min-width: 970px){.blog-hero__content{margin-top:96px;max-width:none}}.blog-hero__title{margin-bottom:83px}@media (min-width: 630px){.blog-hero__title{margin-bottom:101px}}@media (min-width: 970px){.blog-hero__title{margin-bottom:149px}}@media (min-width: 1280px){.blog-hero__title{margin-bottom:163px}}.blog-hero__title h1,.blog-hero__title h2{margin-bottom:15px}@media (max-width: 629px){.blog-hero__title h1,.blog-hero__title h2{font-size:1.71429em;line-height:1.33;text-transform:none}}.blog-hero__additional-title{max-width:80%;margin-right:auto;margin-left:auto}@media (min-width: 1280px){.blog-hero__additional-title{max-width:60%}}.blog-hero__subtitle{font-size:1em;line-height:1.71;margin-bottom:24px}@media (min-width: 630px){.blog-hero__subtitle{margin-bottom:16px}}@media (min-width: 970px){.blog-hero__subtitle{margin-bottom:22px}}@media (min-width: 1280px){.blog-hero__subtitle{font-size:1.25em;line-height:1.2}}.blog-hero-info__item{position:relative;display:inline-block;margin:0;line-height:1}.blog-hero-info__item:not(:first-child){padding:0 0 0 16px;margin:0 0 0 10px;border-left:1px solid}.blog-hero-info__item--author{font-weight:bold;display:block}@media (min-width: 630px){.blog-hero-info__item--author{display:inline-block}}.tags-list a{display:inline-block;font-size:.92857em;padding:4px 10px 3px;margin:0 6px 8px 0;line-height:1.54;color:#fff}@media (min-width: 630px){.tags-list a{font-weight:600;background:#3cd5af}}@media (min-width: 1280px){.tags-list a{font-size:.8125em}}.blog-hero .tags-list a{pointer-events:none}@media (min-width: 630px){.blog-container,.blog-container .container{max-width:552px}}@media (min-width: 970px){.blog-container,.blog-container .container{max-width:650px}}@media (min-width: 1280px){.blog-container,.blog-container .container{max-width:800px}}.blog-article{margin-top:20px}@media (min-width: 630px){.blog-article{margin:30px 0 3.05em}}@media (min-width: 970px){.blog-article{margin-top:50px}}.blog-article h1:first-child,.blog-article h1:nth-child(2),.blog-article h2:first-child,.blog-article h2:nth-child(2),.blog-article h3:first-child,.blog-article h3:nth-child(2),.blog-article h4:first-child,.blog-article h4:nth-child(2),.blog-article h5:first-child,.blog-article h5:nth-child(2),.blog-article .h1:first-child,.blog-article .h1:nth-child(2),.blog-article .h3:first-child,.blog-article .h3:nth-child(2),.blog-article .h3:first-child,.blog-article .h3:nth-child(2),.blog-article .h4:first-child,.blog-article .h4:nth-child(2),.blog-article .h5:first-child,.blog-article .h5:nth-child(2){margin-top:0}@media (min-width: 970px){.lead-description{font-size:1.25em;color:#4a5f6f}}.results-filter{list-style:none;margin:0;padding:0}@media (min-width: 970px){.results-filter{text-align:center;margin:0 0 40px 0}}.results-filter__title{text-transform:capitalize;display:block;padding:8px 15px}.results-filter__dropdown{display:none;overflow:hidden}.results-filter__item-footer{display:none}.results-filter__item{border:1px solid #d8e1e9;position:relative;margin-bottom:15px;max-width:100%}@media (min-width: 970px){.results-filter__item{display:inline-block;margin-bottom:0;font-size:24px;border:none;margin-right:15px;text-align:left;min-width:250px}}.pos-tags{max-height:0;visibility:hidden}@media (min-width: 970px){.case-page{display:-webkit-box;display:flex}}@media (min-width: 970px){.case-page .blog-article{-webkit-box-flex:0;flex:0 0 620px;max-width:620px;margin-right:50px}}@media (min-width: 1280px){.case-page .blog-article{max-width:770px;flex-basis:770px}}.case-page-info{margin:50px 0 35px;-webkit-box-ordinal-group:2;order:1}@media (min-width: 970px){.case-page-info{-webkit-box-flex:0;flex:0 0 270px}}@media (min-width: 1280px){.case-page-info{flex-basis:355px}}.case-features-list{list-style:none;padding:0;margin:0 0 16px}@media (min-width: 630px){.case-features-list{margin-bottom:40px}}.case-features-list__item{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;margin:0 0 15px}.case-features-list__icon{-webkit-box-flex:0;flex:0 0 40px;width:40px;height:40px;margin:0 15px 0 0}@media (min-width: 1280px){.case-features-list__icon{flex-basis:50px;width:50px;height:50px}}.case-features-list__icon img{width:100%;height:100%;-o-object-fit:contain;object-fit:contain}.case-features-list__title{margin:0}.section-header{position:relative;height:100vh;min-height:600px;max-height:100vh;padding-bottom:62px;padding-top:62px}@media (min-width: 480px){.section-header{padding-top:82px}}@media (min-width: 970px){.section-header{padding-top:114px}}@media (min-width: 630px){.section-header{padding-bottom:187px}}.section-header__title-w{height:100%;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}.section-header__title{color:#fff;display:inline-block;font-size:2.28571em;text-align:center}.section-header__title span{margin-right:9px}@media (min-width: 630px){.section-header__title{text-align:start;font-size:2.5em;max-width:91%}.section-header__title span{margin-right:0}}@media (min-width: 970px){.section-header__title{font-size:3.75em}}@media (min-width: 1280px){.section-header__title{font-size:4.375em}}.newscast{position:absolute;left:0;right:0;bottom:-5px;z-index:9;display:none}@media (min-width: 630px){.newscast{display:block}}@media (min-width: 1280px){.newscast{bottom:-93px}}.newscast__btn-more{margin:25px 0 0;text-align:right;position:relative;z-index:5}.newscast.customer-video--home{margin-bottom:0}.newscast.customer-video--home .customer-video__item-description{opacity:1 !important}.newscast.customer-video--home .customer-video__item-inner:before{content:'';top:0;right:0;left:0;bottom:0;display:block;position:absolute;z-index:-2;background-color:#415262;-webkit-transition:opacity .3s;-o-transition:opacity .3s;transition:opacity .3s}.newscast.customer-video--home .customer-video__item-inner:hover:before{opacity:0}#customer-video-slider,#customer-video-slider-home{flex-wrap:nowrap}@media (max-width: 969px){#customer-video-slider,#customer-video-slider-home{overflow:hidden}}#customer-video-slider.slick-initialized,#customer-video-slider-home.slick-initialized{overflow:hidden}.mfp-content .input-group{margin-top:30px}.mfp-content .input-group .form-label{font-size:1em}@media (min-width: 970px){.mfp-content .bottom-fields{margin-top:28px}}.mfp-content .bottom-fields .wpcf7-checkbox .wpcf7-list-item-label{font-size:.71429em}@media (min-width: 630px){.mfp-content .bottom-fields .wpcf7-checkbox .wpcf7-list-item-label{font-size:.78571em}}.mfp-content .btn-submit{font-size:1em}.mfp-content div.wpcf7-mail-sent-ng{display:none !important}.mfp-container,.mfp-wrap{max-height:100vh !important}.form-popup{padding:20px 15px 20px;text-align:left;max-width:523px;margin:0 auto;position:relative;background:white;-webkit-box-shadow:5px 15px 40px 0 rgba(38,55,69,0.26);box-shadow:5px 15px 40px 0 rgba(38,55,69,0.26)}@media (min-width: 480px){.form-popup{padding:35px 41px 40px;margin-top:40px;margin-bottom:40px}}@media (min-width: 970px){.form-popup{max-width:670px;padding:35px 41px 40px}}.form-popup .wpcf7-mail-sent-ok{display:none !important}.form-popup ul li{list-style:inherit}.message-popup{max-width:372px}.message-popup .mfp-close{display:none}.message-popup .link-hover-line{display:inline-block;margin-top:15px}.send-to-header{margin:0 0 27px;text-align:left}@media (min-width: 480px){.send-to-header{display:-webkit-box;display:flex;padding-right:40px}}.send-to-header__title{margin:0 12px 0 0;font-size:1em;font-weight:normal;color:#3cd5af}.send-to-header__name{text-align:left;margin-bottom:0}@media (min-width: 1280px){.send-to-header__name{margin-bottom:5px}}.send-to-header__work{margin:0}.popup-warning-msg{margin:42px auto 17px;text-align:center;max-width:390px;display:none}.popup-warning-msg__icon{display:block;width:100%;max-width:307px;height:auto;margin:0 auto 36px}.popup-warning-msg__text{margin:0 0 53px;font-size:1.25em;line-height:1.2;font-weight:bold}.popup-warning-msg__text p{margin:1.2em 0}.popup-warning-msg__btn-try{font-size:1em;padding-top:8px;padding-bottom:8px;min-width:135px}.video-popup{position:relative;padding:0;width:auto;max-width:900px;margin:20px auto}.video-popup video{width:100%}.plyr__play-large{background:#3cd5af}.plyr__progress--played{color:#3cd5af}.plyr__volume--display{color:#3cd5af}.plyr input[type=range]:active::-webkit-slider-thumb{background:#3cd5af}.plyr input[type=range]:active::-moz-range-thumb{background:#3cd5af}.plyr--video .plyr__controls button.tab-focus:focus,.plyr--video .plyr__controls button:hover{background:#3cd5af}.plyr--youtube .plyr__play-large{background-color:transparent;border:none}.plyr--youtube .plyr__play-large:after{display:block;content:'';width:90px;height:60px;background:url(https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/img/youtube-button.png) center no-repeat;background-size:contain}.plyr--youtube .plyr__play-large svg{display:none}@media (max-width: 970px){.customer-video{margin-bottom:40px}}.customer-video__item-inner{position:relative;display:-webkit-box;display:flex;height:180px;flex-wrap:wrap;padding:30px;color:#fff;align-content:flex-end;cursor:pointer;-webkit-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s}@media (min-width: 1280px){.customer-video__item-inner{height:240px}}.customer-video__item-inner:hover .customer-video__item-title,.customer-video__item-inner:hover .customer-video__item-description,.customer-video__item-inner:hover .btn-clear--play{opacity:0}.customer-video__item-inner:hover .customer-video__item-overlay{opacity:1}.customer-video__item-title{margin:0;font-size:1.125em;line-height:1.3}.customer-video__item-description{font-weight:300;margin-top:10px;margin-bottom:0;width:100%;color:rgba(255,255,255,0.9)}@media (min-width: 1280px){.customer-video__item-description{font-size:.9375em}}.customer-video__item-description .customer-position{color:#fff;font-weight:bold}.customer-video__item-title,.customer-video__item-description,.customer-video__item-overlay{-webkit-transition:all 0.4s;-o-transition:all 0.4s;transition:all 0.4s}.customer-video__item-image{position:absolute !important;-o-object-fit:cover;object-fit:cover;top:0;left:0;width:100%;height:100%;z-index:-2;background-color:#415262}.customer-video__item-overlay{position:absolute;width:100%;height:100%;top:0;right:0;bottom:0;left:0;display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;opacity:0}.customer-video__item-overlay:before{content:'';width:100%;height:100%;position:absolute;top:0;right:0;bottom:0;left:0;display:block;opacity:0.85;background-image:-o-linear-gradient(55deg, #95e171, #44dab8);background-image:linear-gradient(35deg, #95e171, #44dab8);z-index:-1}.customer-video__item-link{display:-webkit-box;display:flex;width:100%;height:100%;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.customer-video .btn-clear--play{font-size:.8125em;padding:5px 10px;margin-top:15px;pointer-events:none}.customer-video .btn-clear__i-play{border-width:5.5px 0 5.5px 10px}#customer-video-slider.slick-dotted,#customer-video-slider-home.slick-dotted{padding-bottom:70px}#customer-video-slider .slick-dots li:not(.slick-active),#customer-video-slider-home .slick-dots li:not(.slick-active){background-color:#d8e1e9}@media (min-width: 1280px){.customer-video--home .customer-video__item-description{font-size:1.1875em}}.customer-video--home .customer-video__item-overlay{opacity:1;width:initial;height:initial;top:0px;right:0px;left:0px;bottom:0px}.customer-video--home .customer-video__item-overlay:before{background:transparent;-webkit-transition:all .4s;-o-transition:all .4s;transition:all .4s}.customer-video--home .video-item__play-btn{display:inline-block;width:50px;height:50px;padding:8px;border-radius:50%;background-color:#909ea3;-webkit-transition:all .25s;-o-transition:all .25s;transition:all .25s}@media (min-width: 1280px){.customer-video--home .video-item__play-btn{width:70px;height:70px}}.customer-video--home .video-item__play-btn svg{max-width:100%;max-height:100%}.customer-video--home .customer-video__item-inner{padding:20px;-webkit-box-align:end;align-items:flex-end}.customer-video--home .customer-video__item-inner:hover .customer-video__item-overlay:before{background-image:none;background-color:rgba(60,213,175,0.9)}@media (min-width: 970px){.customer-video--home .customer-video__item-inner:hover .customer-video__item-overlay{top:-6px;right:-6px;left:-6px;bottom:-6px}}.customer-video--home .customer-video__item-inner:hover .video-item__play-btn{background-color:transparent}.video-one{position:relative}.video-one .customer-video__item-inner{padding:0;height:auto}.video-one .customer-video__item-inner #icon-play{-webkit-transition:.4s;-o-transition:.4s;transition:.4s}.video-one .customer-video__item-inner:hover #icon-play{fill:#45D6AD}@media (min-width: 1280px){.video-one .customer-video__description{font-size:1.125em}}.video-one .customer-video__item-image{position:relative !important}.video-one .customer-video__item-overlay{opacity:1}.video-one .customer-video__item-overlay:before{display:none}@media (min-width: 970px){.video-one:before{position:absolute;content:"";width:100%;bottom:35px;z-index:-2;height:100%;left:-20px;background-image:url(/wp-content/themes/intellias-theme/assets/img/design-elements.svg);background-position:bottom left;background-repeat:no-repeat}}.icon-svg{display:inline-block;height:1em;fill:currentColor}.icon-arrow{font-size:.5rem;width:2em}.icon-arrow-next{font-size:2.875rem;width:.52174em}.icon-arrow-prev{font-size:2.875rem;width:.52174em}.icon-cookies{font-size:3.625rem;width:.77586em}.icon-email{font-size:2.25rem;width:1em}.icon-facebook{font-size:2.25rem;width:1em}.icon-linkedin{font-size:2.25rem;width:1em}.icon-menu{font-size:1.25rem;width:1.55em}.icon-play{font-size:3.75rem;width:1em}.icon-question{font-size:13.875rem;width:.61261em}.icon-search{font-size:1.375rem;width:1em}.icon-send{font-size:3.9375rem;width:1.25397em}.icon-star-rating{font-size:1.75rem;width:1.07143em}.icon-star-rating-empty{font-size:1.75rem;width:1.14286em}.icon-star-rating-half{font-size:1.75rem;width:1.07143em}.icon-team-model-arrow{font-size:.5rem;width:2em}.icon-twitter{font-size:2.25rem;width:1em}.icon-xing{font-size:2.25rem;width:1em}.plyr-captions-off{font-size:1.125rem;width:1em}.plyr-captions-on{font-size:1.125rem;width:1em}.plyr-enter-fullscreen{font-size:1.125rem;width:1em}.plyr-exit-fullscreen{font-size:1.125rem;width:1em}.plyr-fast-forward{font-size:1.125rem;width:1em}.plyr-muted{font-size:1.125rem;width:1em}.plyr-pause{font-size:1.125rem;width:1em}.plyr-play{font-size:1.125rem;width:1em}.plyr-restart{font-size:1.125rem;width:1em}.plyr-rewind{font-size:1.125rem;width:1em}.plyr-volume{font-size:1.125rem;width:1em}.hidden-element,.unvisible{display:none}.sr-only{height:1px;width:1px;border:0;position:absolute;overflow:hidden;clip:rect(0 0 0 0);margin:-1px;padding:0}.text-left{text-align:left}.text-right{text-align:right}.text-center{text-align:center}.text-justify{text-align:justify}.vertical-al{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}img[data-object-fit="contain"]{-o-object-fit:contain;object-fit:contain}img[data-object-fit="cover"]{-o-object-fit:cover;object-fit:cover}@media (max-width: 480px){.hidden-xs{display:none}}@media (min-width: 480px) and (max-width: 629px){.hidden-xm{display:none}}@media (min-width: 630px) and (max-width: 969px){.hidden-sm{display:none}}@media (min-width: 970px) and (max-width: 1279px){.hidden-md{display:none}}@media (min-width: 1280px){.hidden-lg{display:none}}@media screen and (max-width: 969px){.hidden-tablet-mobile{display:none !important}}@media screen and (min-width: 970px){.hidden-desktop{display:none !important}}.stretch{width:100%;display:inline-block;font-size:0;line-height:0}.scroll-stop{overflow-Y:hidden;height:100%;max-height:100%}.overflow-hidden{overflow:hidden}.mb-0{margin-bottom:0 !important}.mb-80{margin-bottom:80px !important}.mt-0{margin-top:0 !important}.mt-10{margin-top:10px !important}
+</style>
+<script>(function(w,d,u){w.readyQ=[];w.bindReadyQ=[];function p(x,y){if(x=="ready"){w.bindReadyQ.push(y);}else{w.readyQ.push(x);}};var a={ready:p,bind:p};w.$=w.jQuery=function(f){if(f===d||f===u){return a}else{p(f)}}})(window,document)</script>
+
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        (function (w, d, s, l, i) {w[l] = w[l] || [];w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';j.async = true;j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KDX55PG');
+    })
+
+    // window.addEventListener('mousemove', analytics);
+    // window.addEventListener('touchmove', analytics);
+    // function analytics() {
+    //     (function (w, d, s, l, i) {w[l] = w[l] || [];w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    //         var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';j.async = true;j.src =
+    //             'https://www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j, f);
+    //     })(window, document, 'script', 'dataLayer', 'GTM-KDX55PG');
+    //
+    //     window.removeEventListener('mousemove', analytics);
+    //     window.removeEventListener('touchmove', analytics);
+    // }
+</script>
+
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en" href="https://intellias.com" />
+<link rel="alternate" hreflang="de" href="https://intellias.com/de/" />
+
+	
+	<title>Intellias | Global Technology Partner</title>
+	<meta name="description" content="Intellias is a global technology partner enabling sustained success for our clients with technology innovation, industry expertise, and digital excellence." />
+	<link rel="canonical" href="https://intellias.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Intellias | Global Technology Partner" />
+	<meta property="og:description" content="Intellias is a global technology partner enabling sustained success for our clients with technology innovation, industry expertise, and digital excellence." />
+	<meta property="og:url" content="https://intellias.com/" />
+	<meta property="og:site_name" content="Intellias" />
+	<meta property="article:modified_time" content="2022-02-08T10:57:03+00:00" />
+	<meta property="og:image" content="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/05/soc.jpg" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="850" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/05/soc.jpg" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://intellias.com/#website","url":"https://intellias.com/","name":"Intellias","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://intellias.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://intellias.com/#primaryimage","inLanguage":"en-US","url":"https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/05/soc.jpg","contentUrl":"https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/05/soc.jpg","width":1920,"height":850},{"@type":"WebPage","@id":"https://intellias.com/#webpage","url":"https://intellias.com/","name":"Intellias | Global Technology Partner","isPartOf":{"@id":"https://intellias.com/#website"},"primaryImageOfPage":{"@id":"https://intellias.com/#primaryimage"},"datePublished":"2017-08-15T09:37:41+00:00","dateModified":"2022-02-08T10:57:03+00:00","description":"Intellias is a global technology partner enabling sustained success for our clients with technology innovation, industry expertise, and digital excellence.","breadcrumb":{"@id":"https://intellias.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://intellias.com/"]}]},{"@type":"BreadcrumbList","@id":"https://intellias.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	
+
+
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Intellias &raquo; Feed" href="https://intellias.com/feed/" />
+<link rel="https://api.w.org/" href="https://intellias.com/wp-json/" /><link rel="alternate" type="application/json" href="https://intellias.com/wp-json/wp/v2/pages/6" />        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://intellias.com",
+            "name": "Intellias",
+            "logo": "https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/img/logo-shema.png",
+            "description": "Intellias has 15 years of experience in the DACH and Benelux countries, the United States, the United Kingdom, and Canada. KPMG has highlighted Intellias as one of the leading IT-BPO providers in Lviv. The company has also been recognized by Inc. 5000 as one of the fastest-growing privately held companies in Europe.",
+            "location": {
+                "@type": "PostalAddress",
+                "addressLocality": "Lviv",
+                "url": "https://intellias.com/lviv/"
+            },
+            "founder": [{
+                "@type": "Person",
+                "name": "Vitaly Sedler",
+                "image": "https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/img/content-int/Vitaly-Sedler.jpg",
+                "sameAs": [
+                    "https://intellias.com/leadership",
+                    "https://www.linkedin.com/in/vitaly-sedler-0b507a2/"
+                    ]
+                },
+                {
+                "@type": "Person",
+                "name": "Michael Puzrakov",
+                "image": "https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/img/content-int/Michael-Puzrakov.jpg",
+                "sameAs": [
+                    "https://intellias.com/leadership",
+                    "https://www.linkedin.com/in/michael-puzrakov-2b907a2/"
+                    ]
+                }
+            ],
+            "foundingDate": "2002",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "telephone": "+38 (032) 290-36-90",
+                "email": "info@intellias.com"
+                }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/IntelliasInside/",
+                "https://www.linkedin.com/company/49445/",
+                "https://twitter.com/intelliasinside",
+                "https://www.xing.com/companies/intellias-intelligentnearshoreoutsourcing"
+            ]
+        }
+
+        </script>
+
+        <meta name="sumo_type" content="homepage"><link rel="icon" href="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2017/09/cropped-favicon-60x60.png" sizes="32x32" />
+<link rel="icon" href="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2017/09/cropped-favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2017/09/cropped-favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2017/09/cropped-favicon-300x300.png" />
+<style>
+    .home-about {position: relative;padding: 30px 0 0;}
+    .technologies-section {margin-top: 40px;margin-bottom: 40px;}
+    @media (min-width: 630px) {.home-about{padding: 173px 0 0;}}
+    @media (min-width: 970px) {.technologies-section {margin-top: 70px;margin-bottom: 70px;}}
+    .technologies-logos{display: flex;flex-wrap:wrap;justify-content:center;padding:0;margin:0 -28px -30px 0}
+    .technologies-logos__item{position:relative;display:inline-block;margin:0 28px 30px 0;height:36px;width:calc(33% - 28px)}
+    @media (min-width: 630px){.technologies-logos{margin-right:-30px}.technologies-logos__item{margin-right:30px;margin-bottom:45px;height:46px;width:calc(25% - 30px)}}
+    @media (min-width: 970px){.technologies-logos{margin-right:-40px}.technologies-logos__item{margin-right:40px;margin-bottom:65px;height:56px;width:calc(16% - 40px)}}
+    @media (min-width: 1280px){html:lang(de-DE) .section-header__title{font-size: 3.75em}.technologies-logos{margin-right:-52px}.technologies-logos__item{margin-right:52px;height:70px;width:145px}}
+    .technologies-logos__img{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;max-width:100%;max-height:100%;width:auto;height:auto}
+</style>
+</head>
+<body class="home page-template-default page page-id-6">
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDX55PG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript> 
+
+<div id="page" class="home-page">
+    <header id="fixed-header" class="header header--transparent">
+        <svg style="display:none;">
+				<symbol id="logo" viewBox="0 0 152 40">
+				 <path id="svg-logo__title" d="M74.484 12.292c0-1.948-.543-2.821-1.265-3.512-.615-.584-1.591-.752-3.153-.81-.547-.018-13.63 0-14.235 0-3.15 0-3.66.487-4.265.946-.722.555-1.362 1.672-1.362 3.376v9.596c.018 1.897.65 3.14 1.884 3.691.526.237 1.663.476 5.434.476l16.086-.007v-3.602h-16.78a1.024 1.024 0 01-1.04-1.074l-.007-2.528H74.47l.014-6.552zm-5.609 2.911l-13.105-.029V12.68a1.072 1.072 0 011.058-1.107l10.943-.01c.613.008 1.105.51 1.104 1.124v2.517zM6.381 7.973H.747V26.07h5.634V7.974zM82.445.703h-5.601v25.357h5.601V.702zm2.388 25.346h5.595V.702h-5.595v25.346zM41.275 11.461h6.638V7.96l-6.638.01V.645h-5.616v21.243c0 1.915.657 3.176 1.866 3.774.897.444 1.619.386 5.39.386l4.887.011.007-3.63s-4.994.114-5.74-.108c-.626-.186-.794-.68-.794-1.293v-9.567zM.775.691h5.606v3.63H.776V.692zm31.823 8.697c-.915-1.045-1.397-1.464-6.624-1.432H8.748v18.107l5.587-.008V11.608h12.272a1.044 1.044 0 011.069 1.067v13.38h5.641V14.92c0-1.944.15-4.536-.719-5.532zm89.538-1.056c-.532-.222-1.08-.38-4.858-.38h-15.625v3.62c.021-.003 16.115 0 16.115 0a1.2 1.2 0 011.14 1.178l.004 2.431h-15.447c-1.752-.025-2.66 1.035-2.66 3.556 0 0-.046 2.07 0 3.67.025.866.008 1.769.33 2.392.41.795 1.072 1.145 2.39 1.25l21.031.017v-13.72c0-1.944-1.1-3.466-2.42-4.014zm-4.318 14.114l-10.378.011a.988.988 0 01-1.015-.917v-1.715a1.044 1.044 0 011.012-.988l11.478-.007.004 2.546a1.075 1.075 0 01-1.101 1.07zm33.431-2.348c0-1.332.125-2.868-1.115-4.118-.858-.87-2.274-.76-2.266-.791h-14.332a.983.983 0 01-.922-.813 4.578 4.578 0 01-.022-.448v-1.403c0-.128.026-.255.076-.373a.942.942 0 01.868-.587l16.862-.003.008-3.602-16.083.01c-3.8 0-4.723.086-5.455.484-1.184.644-1.91 1.858-1.91 3.799v1.564c0 1.221.022 2.596 1.137 3.8 1.02 1.098 2.124 1.138 3.55 1.23l13.077-.003c.534.015.963.446.976.981l-.008 1.673c-.047.51-.457.91-.968.945-.065.014-16.898-.004-16.898-.004v3.61l16.354.014c3.983.035 4.705-.054 5.216-.323 1.466-.766 1.752-1.736 1.855-3.54v-2.102zM92.844.69h5.584v3.63h-5.584V.692zm5.584 7.283h-5.584v18.064h5.584V7.974z"/>
+                 <path id="svg-logo__description" d="M1.798 30.17H.786v6.777h1.012V30.17zm6.056 3.072a1.45 1.45 0 00-.376-1.092c-.25-.24-.707-.362-1.376-.362-1.008 0-1.558.243-1.655.723v-.616h-.94v5.052h.94v-3.655a.717.717 0 01.279-.656c.35-.149.73-.21 1.108-.179.198-.005.395.018.586.068.13.03.247.099.336.197a.788.788 0 01.129.258c.024.102.034.207.032.312v3.655h.937v-3.705zm4.819 3.111c-.249.042-.5.07-.751.082-.294.034-.59-.03-.844-.182a.948.948 0 01-.21-.724v-3.018h1.805v-.616h-1.806v-1.568H9.92v1.568H8.794v.616H9.92v2.965c0 .612.125 1.027.375 1.25.39.257.858.372 1.323.325.353.003.706-.025 1.055-.082v-.616zm5.19-2.84c0-.64-.168-1.088-.504-1.342a2.678 2.678 0 00-1.601-.383 2.86 2.86 0 00-1.698.397c-.383.33-.582.825-.533 1.329v1.994c0 1.031.772 1.543 2.313 1.543a8.361 8.361 0 001.827-.207v-.72a6.947 6.947 0 01-1.702.25 2.203 2.203 0 01-1.115-.225.81.81 0 01-.376-.756v-.762h3.39v-1.117zm-3.389.502v-.795a.667.667 0 01.304-.637c.292-.13.61-.188.93-.169a1.84 1.84 0 01.936.176.672.672 0 01.283.63v.795h-2.453zm5.777-4.375h-.936v7.307h.936V29.64zm2.588 0h-.94v7.307h.94V29.64zm2.585.426h-.94v.98h.94v-.98zm0 1.83h-.94v5.051h.94v-5.052zm5.076 0v.49c-.154-.398-.665-.598-1.54-.598a2.562 2.562 0 00-1.591.387 1.546 1.546 0 00-.487 1.285v2.059c-.047.44.108.877.422 1.188.283.23.812.344 1.591.344.358.006.715-.042 1.058-.143a.58.58 0 00.486-.501v1.21a.87.87 0 01-.329.763 1.854 1.854 0 01-1.047.229 16.615 16.615 0 01-1.827-.147v.67c.577.084 1.159.123 1.741.114a3.465 3.465 0 001.798-.372c.4-.247.6-.727.6-1.447v-5.532H30.5zm-.379 4.357a2.29 2.29 0 01-1.03.172c-.35.03-.701-.026-1.025-.161a.753.753 0 01-.254-.684v-2.288a.795.795 0 01.24-.677 1.92 1.92 0 011.022-.18c.375-.034.753.028 1.097.184a.76.76 0 01.268.673v2.288a.694.694 0 01-.318.673zm7.053-2.74c0-.64-.168-1.088-.507-1.342a2.664 2.664 0 00-1.598-.383 2.872 2.872 0 00-1.702.397c-.383.33-.581.825-.533 1.329v1.994c0 1.031.773 1.543 2.317 1.543a8.352 8.352 0 001.823-.207v-.72a6.92 6.92 0 01-1.698.25 2.203 2.203 0 01-1.115-.225.81.81 0 01-.376-.756v-.762h3.39v-1.117zm-3.389.502v-.795a.665.665 0 01.3-.637 2 2 0 01.93-.169c.323-.024.647.036.94.176.2.143.308.385.28.63v.795h-2.45zm9.184-.773a1.45 1.45 0 00-.375-1.092c-.25-.24-.708-.362-1.377-.362-1.008 0-1.558.243-1.655.723v-.616h-.94v5.052h.94v-3.655a.717.717 0 01.279-.656c.35-.149.73-.21 1.108-.179.198-.005.395.018.586.068.13.03.247.099.336.197a.788.788 0 01.13.258c.023.102.034.207.031.312v3.655h.937v-3.705zm4.819 3.111c-.249.042-.5.07-.75.082a1.353 1.353 0 01-.845-.182.948.948 0 01-.21-.724v-3.018h1.805v-.616h-1.805v-1.568h-.948v1.568H43.91v.616h1.126v2.965c0 .612.125 1.027.376 1.25.39.257.857.372 1.322.325.353.003.706-.025 1.055-.082v-.616zm7.632-2.907c-.25-.255-.726-.383-1.43-.383h-.811c-.305.024-.61-.031-.887-.162a.565.565 0 01-.25-.515v-.774c-.023-.26.1-.51.318-.651a2.81 2.81 0 011.287-.194c.609.015 1.215.074 1.816.176v-.763a16.115 16.115 0 00-1.745-.114c-1.011 0-1.707.129-2.087.386-.386.27-.601.723-.569 1.193v.54c-.033.443.111.881.4 1.218.269.275.744.411 1.423.411h.794c.305-.028.61.036.88.183.177.151.27.38.246.612v.878a.638.638 0 01-.382.651 2.92 2.92 0 01-1.098.161c-.716-.013-1.428-.1-2.127-.257v.845c.683.1 1.372.154 2.063.164a3.509 3.509 0 001.92-.412c.41-.275.614-.773.614-1.496v-.49a1.665 1.665 0 00-.375-1.207zm6.124-.695a1.52 1.52 0 00-.29-.533c-.14-.14-.315-.24-.508-.287a2.85 2.85 0 00-.618-.122 11.188 11.188 0 00-.787-.021c-.332 0-.597.007-.79.021a2.85 2.85 0 00-.618.122 1.084 1.084 0 00-.508.287 1.52 1.52 0 00-.29.533c-.087.273-.128.558-.12.845v1.754c-.012.321.039.641.15.942a.98.98 0 00.5.516c.222.103.458.172.7.204.325.031.65.045.976.04.326 0 .587-.008.787-.019a3.27 3.27 0 00.626-.114c.188-.048.36-.141.504-.272.132-.144.232-.315.293-.502.081-.256.12-.525.114-.795v-1.754a2.528 2.528 0 00-.121-.845zm-.912 3.269a.487.487 0 01-.272.286 1.388 1.388 0 01-.404.111c-.14.011-.346.018-.615.018-.268 0-.479-.007-.618-.018a1.388 1.388 0 01-.404-.11.487.487 0 01-.272-.287 1.552 1.552 0 01-.075-.533v-2.049c0-.465.097-.755.283-.866a3.656 3.656 0 012.17 0c.186.111.282.401.282.866v2.049c.006.18-.02.361-.075.533zm5.58-4.125h-1.68v-.877a.834.834 0 01.229-.691c.222-.136.48-.197.74-.175.272-.003.545.013.815.05v-.616a6.992 6.992 0 00-.847-.054 2.37 2.37 0 00-1.394.347c-.351.295-.532.745-.483 1.2v.816h-1.155v.616h1.155v4.436h.94v-4.436h1.68v-.616zm3.772 4.458c-.249.042-.5.07-.751.082a1.36 1.36 0 01-.844-.182.948.948 0 01-.207-.724v-3.018h1.802v-.616h-1.802v-1.568h-.951v1.568h-1.126v.616h1.126v2.965c0 .612.125 1.027.375 1.25.392.257.86.372 1.327.325.352.003.703-.025 1.05-.082v-.616zm7.403-4.458L76.2 36.05h-.064l-1.23-4.154h-1.054l-1.187 4.154H72.6l-1.23-4.154h-1.029l1.698 5.052h1.115l1.198-4.081 1.223 4.081h1.115l1.659-5.052h-.962zm5.902 1.483c0-.648-.125-1.075-.375-1.282-.25-.208-.801-.308-1.648-.308-.554 0-1.176.032-1.866.097v.687c.573-.078 1.151-.12 1.73-.125a2.18 2.18 0 01.965.146.593.593 0 01.257.566v.802H80.84c-.718 0-1.2.108-1.451.319-.288.315-.425.74-.375 1.164 0 .648.135 1.077.4 1.289.264.21.75.318 1.444.318.94 0 1.448-.193 1.523-.583v.48h.908v-3.57zm-1.058 2.835a.708.708 0 01-.35.154c-.136.031-.273.05-.412.058-.121.007-.271.01-.454.01h-.185a.932.932 0 01-.726-.21 1.231 1.231 0 01-.172-.75 1.193 1.193 0 01.161-.762c.242-.146.527-.206.808-.168h1.451v1.378a.38.38 0 01-.121.29zm5.426-4.425H87.2a1.735 1.735 0 00-.922.283.788.788 0 00-.454.648v-.824h-.887v5.052h.937v-3.559a.648.648 0 01.307-.626c.3-.13.628-.188.954-.169h.522v-.805zm5.109 1.726c0-.641-.168-1.089-.504-1.343a2.684 2.684 0 00-1.602-.383 2.86 2.86 0 00-1.698.397 1.546 1.546 0 00-.532 1.329v1.994c0 1.031.772 1.543 2.312 1.543a8.361 8.361 0 001.827-.207v-.72a6.947 6.947 0 01-1.701.25 2.203 2.203 0 01-1.116-.225.81.81 0 01-.375-.756v-.762h3.389v-1.117zm-3.39.5v-.794a.66.66 0 01.305-.637c.29-.13.608-.188.926-.169.323-.024.647.036.94.176a.68.68 0 01.282.63v.795h-2.452zm11.973 2.224h-3.64v-2.434h3.19v-.71h-3.19v-2.212h3.533v-.713h-4.544v6.778h4.65v-.709zm5.702-2.996a1.45 1.45 0 00-.376-1.092c-.25-.24-.708-.362-1.376-.362-1.008 0-1.562.243-1.659.723v-.616h-.936v5.052h.936v-3.655a.71.71 0 01.283-.656c.348-.149.727-.21 1.104-.179a2.12 2.12 0 01.59.068.62.62 0 01.333.197c.06.077.105.164.132.258.022.102.032.207.028.312v3.655h.94v-3.705zm5.076-1.347v.49c-.15-.397-.665-.597-1.54-.597a2.57 2.57 0 00-1.592.387c-.352.33-.532.804-.486 1.285v2.059c-.046.44.11.876.422 1.188.282.23.811.344 1.59.344.359.006.715-.042 1.059-.143a.58.58 0 00.486-.501v1.21a.87.87 0 01-.329.763 1.854 1.854 0 01-1.047.229 16.615 16.615 0 01-1.827-.147v.67c.578.085 1.16.123 1.745.114a3.483 3.483 0 001.798-.372c.396-.247.597-.727.597-1.447v-5.532h-.876zm-.38 4.358a2.273 2.273 0 01-1.025.172 2.185 2.185 0 01-1.03-.161.762.762 0 01-.253-.684v-2.288a.795.795 0 01.24-.677 1.93 1.93 0 011.021-.18c.377-.034.756.029 1.102.184a.767.767 0 01.264.673v2.288a.694.694 0 01-.318.673zm3.844-6.187h-.94v.98h.94v-.98zm0 1.83h-.94v5.051h.94v-5.052zm5.995 1.346a1.45 1.45 0 00-.376-1.092c-.25-.24-.711-.362-1.376-.362-1.008 0-1.562.243-1.659.723v-.616h-.94v5.052h.94v-3.655a.71.71 0 01.283-.656c.348-.15.727-.21 1.104-.179a2.12 2.12 0 01.59.068c.128.03.244.1.333.197.06.077.103.164.128.258.024.102.035.207.033.312v3.655h.94v-3.705zm5.794.272c0-.641-.168-1.089-.504-1.343a2.678 2.678 0 00-1.601-.383 2.86 2.86 0 00-1.698.397c-.383.33-.582.825-.533 1.329v1.994c0 1.031.772 1.543 2.317 1.543a8.352 8.352 0 001.823-.207v-.72a6.944 6.944 0 01-1.698.25 2.21 2.21 0 01-1.12-.225.81.81 0 01-.374-.756v-.762h3.388v-1.117zm-3.388.5v-.794a.667.667 0 01.303-.637c.292-.13.611-.188.93-.169a1.84 1.84 0 01.936.176.672.672 0 01.283.63v.795h-2.452zm8.99-.5c0-.641-.171-1.089-.507-1.343a2.67 2.67 0 00-1.602-.383 2.867 2.867 0 00-1.698.397c-.383.33-.581.825-.533 1.329v1.994c0 1.031.772 1.543 2.317 1.543a8.352 8.352 0 001.823-.207v-.72a6.944 6.944 0 01-1.698.25 2.203 2.203 0 01-1.115-.225.81.81 0 01-.376-.756v-.762h3.39v-1.117zm-3.389.5v-.794a.665.665 0 01.3-.637 2 2 0 01.93-.169 1.84 1.84 0 01.937.176.672.672 0 01.282.63v.795h-2.449zm7.557-2.226h-.457a1.735 1.735 0 00-.923.283.788.788 0 00-.454.648v-.824h-.886v5.052h.937v-3.559a.645.645 0 01.31-.626c.3-.13.626-.188.951-.169h.522v-.805zm1.899-1.722h-.937v.98h.937v-.98zm0 1.83h-.937v5.051h.937v-5.052zm5.994 1.346a1.45 1.45 0 00-.375-1.092c-.25-.24-.708-.362-1.376-.362-1.008 0-1.559.243-1.659.723v-.616h-.936v5.052h.936v-3.655a.717.717 0 01.283-.656c.348-.149.727-.21 1.104-.179a2.12 2.12 0 01.59.068.62.62 0 01.332.197c.061.077.106.164.133.258.023.102.034.207.032.312v3.655h.936v-3.705zm5.077-1.347v.49c-.15-.397-.665-.597-1.541-.597a2.57 2.57 0 00-1.59.387c-.353.33-.533.804-.487 1.285v2.059c-.046.44.11.878.425 1.188.28.23.812.344 1.588.344.357.006.714-.042 1.058-.143a.58.58 0 00.486-.501v1.21a.87.87 0 01-.329.763 1.854 1.854 0 01-1.047.229 16.5 16.5 0 01-1.824-.147v.67a10.77 10.77 0 001.741.114 3.483 3.483 0 001.798-.372c.4-.247.597-.727.597-1.447v-5.532h-.875zm-.38 4.358a2.273 2.273 0 01-1.025.172 2.185 2.185 0 01-1.03-.161.762.762 0 01-.254-.684v-2.288a.795.795 0 01.24-.677 1.93 1.93 0 011.022-.18c.377-.034.756.029 1.101.184a.767.767 0 01.265.673v2.288a.694.694 0 01-.318.673z"/>
+				</symbol>
+			</svg><div class="container">
+    <div class="row header-row">
+        <div class="col-md-2 col-sm-5 col-xs-6">
+            <a class="logo" href="https://intellias.com/" rel="home" title="Intellias"><svg class="logo" viewBox="0 0 152 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<use xlink:href="#logo" />
+			</svg></a>        </div>
+        <div class="col-md-10 col-sm-7 col-xs-6 navigation-wrap">
+            <div class="main-navigation">
+                <ul id="menu-main-menu" class="header-menu">
+                            <li class="menu-item with-sub" data-id="629" data-width="0"><a href="#" title="Services">Services</a></li>
+            <li class="menu-item with-sub" data-id="1800" data-width="0"><a href="#" title="Expertise">Expertise</a></li>
+            <li class="menu-item with-sub" data-id="1804" data-width="0"><a href="#" title="Industries">Industries</a></li>
+            <li class="menu-item with-sub" data-id="1802" data-width="0"><a href="#" title="Company">Company</a></li>
+            <li class="menu-item with-sub" data-id="1803" data-width="0"><a href="#" title="Success stories">Success stories</a></li>
+            <li class="menu-item with-sub" data-id="22996" data-width="0"><a href="#" title="Insights">Insights</a></li>
+                    </ul>
+                <div class="submenu-wrapper">            <div class="submenu parent-item-629">
+                <div class="submenu__inner">
+                    <div class="submenu__inner-sidebar">
+                        <ul><li class="menu-item menu-item-23207 no-child" data-name="menu-23207"><a href="https://intellias.com/services-overview/">Services Overview</a></li>
+                            <li class="menu-item menu-item-37847" data-name="menu-37847"><a class="menu-has-children" href="javascript:;">Consulting</a></li>
+                            <li class="menu-item menu-item-23206 no-child" data-name="menu-23206"><a href="https://intellias.com/software-engineering-services/">Engineering</a></li>
+                            <li class="menu-item menu-item-23208 no-child" data-name="menu-23208"><a href="https://intellias.com/advanced-technology/">Technology</a></li>
+                            <li class="menu-item menu-item-23205 no-child" data-name="menu-23205"><a href="https://intellias.com/solution-operations/">Operations</a></li>
+                            </ul></div>
+                    <div class="submenu__inner-content">
+                        <div class="submenu-layer menu-37847">
+                            <div class="row"><a href="https://intellias.com/digital-consulting/">Digital Consulting Services</a>
+                                <a href="https://intellias.com/solution-discovery/">Solution Discovery</a>
+                                <a href="https://intellias.com/experience-design/">Experience Design</a>
+                                <a href="https://intellias.com/it-transformation-services/">Technology Advisory</a>
+                                </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+                        <div class="submenu parent-item-1800">
+                <div class="submenu__inner">
+                    <div class="submenu__inner-sidebar">
+                        <ul><li class="menu-item menu-item-26243 no-child" data-name="menu-26243"><a href="https://intellias.com/platform-development/">Platform Development</a></li>
+                            <li class="menu-item menu-item-37692 no-child" data-name="menu-37692"><a href="https://intellias.com/custom-software-development/">Custom Development</a></li>
+                            <li class="menu-item menu-item-1376 no-child" data-name="menu-1376"><a href="https://intellias.com/data-science-and-big-data/">Big Data & Analytics</a></li>
+                            <li class="menu-item menu-item-23924" data-name="menu-23924"><a class="menu-has-children" href="javascript:;">Cloud</a></li>
+                            <li class="menu-item menu-item-24705 no-child" data-name="menu-24705"><a href="https://intellias.com/devops-services/">DevOps</a></li>
+                            <li class="menu-item menu-item-21548 no-child" data-name="menu-21548"><a href="https://intellias.com/machine-learning-artificial-intelligence-development-services/">Machine Learning & AI</a></li>
+                            <li class="menu-item menu-item-6735 no-child" data-name="menu-6735"><a href="https://intellias.com/ux-ui-design/">UI/UX Design</a></li>
+                            <li class="menu-item menu-item-22476" data-name="menu-22476"><a class="menu-has-children" href="javascript:;">Internet of Things</a></li>
+                            <li class="menu-item menu-item-12993" data-name="menu-12993"><a class="menu-has-children" href="javascript:;">Location Based Services</a></li>
+                            <li class="menu-item menu-item-22875 no-child" data-name="menu-22875"><a href="https://intellias.com/blockchain-development-services/">Blockchain</a></li>
+                            <li class="menu-item menu-item-24707 no-child" data-name="menu-24707"><a href="https://intellias.com/cybersecurity-consulting-services/">Cybersecurity</a></li>
+                            <li class="menu-item menu-item-32700 no-child" data-name="menu-32700"><a href="https://intellias.com/robotic-process-automation-services/">RPA</a></li>
+                            </ul></div>
+                    <div class="submenu__inner-content">
+                        <div class="submenu-layer menu-23924">
+                            <div class="row"><a href="https://intellias.com/cloud-development-services/">Cloud Software Development Services</a>
+                                <a href="https://intellias.com/cloud-consulting-services/">Cloud Consulting Services</a>
+                                </div>
+                        </div>
+                        <div class="submenu-layer menu-22476">
+                            <div class="row"><a href="https://intellias.com/internet-of-things/">Internet of Things Development Services</a>
+                                <a href="https://intellias.com/consumer-iot-development/">Consumer IoT Development</a>
+                                <a href="https://intellias.com/industrial-internet-of-things-solutions/">Industrial IoT Solutions</a>
+                                <a href="https://intellias.com/smart-cities-solutions/">Smart Сities Solutions</a>
+                                </div>
+                        </div>
+                        <div class="submenu-layer menu-12993">
+                            <div class="row"><a href="https://intellias.com/location-based-services/">Location Based Services</a>
+                                <a href="https://intellias.com/gis-services/">GIS</a>
+                                <a href="https://intellias.com/mapping-services/">Mapping</a>
+                                </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+                        <div class="submenu parent-item-1804">
+                <div class="submenu__inner">
+                    <div class="submenu__inner-sidebar">
+                        <ul><li class="menu-item menu-item-3437" data-name="menu-3437"><a class="menu-has-children" href="javascript:;">Automotive</a></li>
+                            <li class="menu-item menu-item-10067" data-name="menu-10067"><a class="menu-has-children" href="javascript:;">Finance</a></li>
+                            <li class="menu-item menu-item-16658" data-name="menu-16658"><a class="menu-has-children" href="javascript:;">Retail</a></li>
+                            <li class="menu-item menu-item-18987" data-name="menu-18987"><a class="menu-has-children" href="javascript:;">Agriculture</a></li>
+                            <li class="menu-item menu-item-20493" data-name="menu-20493"><a class="menu-has-children" href="javascript:;">Transport & Logistics</a></li>
+                            <li class="menu-item menu-item-19105 no-child" data-name="menu-19105"><a href="https://intellias.com/real-estate-software-development/">Real Estate</a></li>
+                            <li class="menu-item menu-item-17442 no-child" data-name="menu-17442"><a href="https://intellias.com/energy-utilities/">Energy and Utilities</a></li>
+                            <li class="menu-item menu-item-39253" data-name="menu-39253"><a class="menu-has-children" href="javascript:;">Telecom</a></li>
+                            <li class="menu-item menu-item-25738 no-child" data-name="menu-25738"><a href="https://intellias.com/elearning-software-development/">eLearning</a></li>
+                            <li class="menu-item menu-item-26101 no-child" data-name="menu-26101"><a href="https://intellias.com/insurance-software-development/">Insurance</a></li>
+                            <li class="menu-item menu-item-26290 no-child" data-name="menu-26290"><a href="https://intellias.com/healthcare-software-development/">Healthcare</a></li>
+                            </ul></div>
+                    <div class="submenu__inner-content">
+                        <div class="submenu-layer menu-3437">
+                            <div class="row"><a href="https://intellias.com/automotive/">Automotive Software Development</a>
+                                <a href="https://intellias.com/autonomous-driving-adas/">Autonomous Driving &#038; ADAS Software Development</a>
+                                <a href="https://intellias.com/human-machine-interface/">Human Machine Interface</a>
+                                <a href="https://intellias.com/connected-car/">Connected Car Software Development</a>
+                                <a href="https://intellias.com/machine-learning-ai/">AI &#038; Machine Learning in Automotive</a>
+                                <a href="https://intellias.com/automotive-navigation/">Automotive Navigation Software Development</a>
+                                <a href="https://intellias.com/automotive-iot-embedded/">Automotive Embedded Software Development</a>
+                                <a href="https://intellias.com/automotive-cloud-devops/">Automotive Cloud Services and DevOps</a>
+                                <a href="https://intellias.com/electric-vehicle-navigation/">Electric Vehicle Navigation</a>
+                                <a href="https://intellias.com/navigation-data-standard-services/">Navigation Data Standard Services</a>
+                                <a href="https://intellias.com/automotive-big-data/">Automotive Big Data Competence</a>
+                                </div>
+                        </div>
+                        <div class="submenu-layer menu-10067">
+                            <div class="row"><a href="https://intellias.com/fintech/">Financial Services</a>
+                                <a href="https://intellias.com/banking-software-development/">Banking</a>
+                                <a href="https://intellias.com/digital-payments/">Digital Payments</a>
+                                <a href="https://intellias.com/lending-alternative-financing/">Lending &#038; Alternative Financing</a>
+                                </div>
+                        </div>
+                        <div class="submenu-layer menu-16658">
+                            <div class="row"><a href="https://intellias.com/retail-software-development-services/">Retail Software Development Services</a>
+                                <a href="https://intellias.com/ai-in-retail/">AI in Retail and Distribution</a>
+                                <a href="https://intellias.com/ecommerce-development-services/">eCommerce Development Services</a>
+                                <a href="https://intellias.com/security-retail/">Retail Security</a>
+                                <a href="https://intellias.com/indoor-positioning-retail/">Indoor Positioning in Retail</a>
+                                <a href="https://intellias.com/ui-ux-design-retail/">UI/UX Design in Retail</a>
+                                <a href="https://intellias.com/big-data-in-retail-and-ecommerce/">Big Data in Retail and eCommerce</a>
+                                <a href="https://intellias.com/supply-chain-management-solutions-for-retail-and-ecommerce/">Supply Chain in Retail and eCommerce</a>
+                                <a href="https://intellias.com/iot-in-retail/">IoT in Retail</a>
+                                </div>
+                        </div>
+                        <div class="submenu-layer menu-18987">
+                            <div class="row"><a href="https://intellias.com/agriculture-software-development/">Agriculture Software Development</a>
+                                <a href="https://intellias.com/agriculture-drone-software-development/">Agriculture Drone Software Development Services</a>
+                                <a href="https://intellias.com/indoor-vertical-farming/">Indoor Vertical Farming Development Services</a>
+                                </div>
+                        </div>
+                        <div class="submenu-layer menu-20493">
+                            <div class="row"><a href="https://intellias.com/transportation-logistics-software-solutions/">Transportation and Logistics Software Solutions</a>
+                                <a href="https://intellias.com/fleet-management-software-development/">Fleet Management Software Development</a>
+                                <a href="https://intellias.com/urban-mobility/">Urban Mobility Solutions</a>
+                                <a href="https://intellias.com/traffic-management-software-development/">Traffic Management Software Development</a>
+                                </div>
+                        </div>
+                        <div class="submenu-layer menu-39253">
+                            <div class="row"><a href="https://intellias.com/telecom-software-development/">Telecom Software Development</a>
+                                <a href="https://intellias.com/telecom-outsourcing-services/">Telecom BPO Services</a>
+                                <a href="https://intellias.com/telecom-cloud-services/">Telecom Cloud Services</a>
+                                </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+                        <div class="submenu parent-item-1802">
+                <div class="submenu__inner">
+                    <div class="submenu__inner-sidebar">
+                        <ul><li class="menu-item menu-item-1099 no-child" data-name="menu-1099"><a href="https://intellias.com/who-we-are/">Who We Are</a></li>
+                            <li class="menu-item menu-item-1101 no-child" data-name="menu-1101"><a href="https://intellias.com/leadership/">Leadership</a></li>
+                            <li class="menu-item menu-item-1111 no-child" data-name="menu-1111"><a href="https://intellias.com/locations/">Locations</a></li>
+                            <li class="menu-item menu-item-32886 no-child" data-name="menu-32886"><a href="https://intellias.com/technology-office/">Technology Office</a></li>
+                            <li class="menu-item menu-item-35837 no-child" data-name="menu-35837"><a href="https://career.intellias.com/">Careers</a></li>
+                            </ul></div>
+                    <div class="submenu__inner-content">
+                        </div>
+                </div>
+            </div>
+                        <div class="submenu parent-item-1803">
+                <div class="submenu__inner">
+                    <div class="submenu__inner-sidebar">
+                        <ul><li class="menu-item menu-item-1734 no-child" data-name="menu-1734"><a href="https://intellias.com/our-work/">Case Studies</a></li>
+                            <li class="menu-item menu-item-1098 no-child" data-name="menu-1098"><a href="https://intellias.com/clients/">Clients</a></li>
+                            </ul></div>
+                    <div class="submenu__inner-content">
+                        </div>
+                </div>
+            </div>
+                        <div class="submenu parent-item-22996">
+                <div class="submenu__inner">
+                    <div class="submenu__inner-sidebar">
+                        <ul><li class="menu-item menu-item-19507 no-child" data-name="menu-19507"><a href="https://intellias.com/blog/">Blog</a></li>
+                            <li class="menu-item menu-item-22995 no-child" data-name="menu-22995"><a href="https://intellias.com/whitepapers/">Whitepapers</a></li>
+                            <li class="menu-item menu-item-14137 no-child" data-name="menu-14137"><a href="https://intellias.com/news/">News</a></li>
+                            </ul></div>
+                    <div class="submenu__inner-content">
+                        </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="col-buttons">
+                <div class="js-open-search">
+                    <svg class="icon-svg icon-search" width="22" height="22" viewBox="0 0 22 22"><path  fill-rule="nonzero"  d="M8.795 16.504a7.57 7.57 0 0 0 4.923-1.795l5.983 5.983a.685.685 0 0 0 .496.205.702.702 0 0 0 .496-1.197l-5.984-5.982a7.697 7.697 0 0 0 1.795-4.923 7.711 7.711 0 0 0-7.71-7.71c-4.238 0-7.709 3.47-7.709 7.71 0 4.256 3.47 7.71 7.71 7.71zm0-14.017a6.314 6.314 0 0 1 6.308 6.308 6.303 6.303 0 0 1-6.308 6.308 6.314 6.314 0 0 1-6.308-6.308c0-3.47 2.838-6.308 6.308-6.308z"/></svg>
+
+                    
+                    <div id="search-popup" class="search-popup" style="opacity:0;visibility:hidden; width:0;">
+                        <form action="https://intellias.com/" class="search-form search-form--popup" autocomplete="off"><div class="search-form__inner">
+    <button class="search-form__submit" aria-label="Search" value="Search">
+        <svg class="icon-svg icon-search" width="22" height="22" viewBox="0 0 22 22">
+            <path  fill-rule="nonzero"  d="M8.795 16.504a7.57 7.57 0 0 0 4.923-1.795l5.983 5.983a.685.685 0 0 0 .496.205.702.702 0 0 0 .496-1.197l-5.984-5.982a7.697 7.697 0 0 0 1.795-4.923 7.711 7.711 0 0 0-7.71-7.71c-4.238 0-7.709 3.47-7.709 7.71 0 4.256 3.47 7.71 7.71 7.71zm0-14.017a6.314 6.314 0 0 1 6.308 6.308 6.303 6.303 0 0 1-6.308 6.308 6.314 6.314 0 0 1-6.308-6.308c0-3.47 2.838-6.308 6.308-6.308z"/>
+        </svg>
+        
+        <span class="search-form__loader"></span>
+    </button>
+    <input type="search" class="search-form__input" name="s" required="required" aria-label="Type your search here" placeholder="Type your search here" value=""/>
+
+    <i class="search-form__clear">x</i>
+
+    <button class="btn btn-filled btn-get" type="submit" value="Search">Search</button>
+</div>
+
+<div class="search-form__dropdown"></div></form>
+                    </div>
+                </div>
+
+                <a href="https://intellias.com/contact/" class="btn btn-clear btn-get">Get in touch</a>
+
+                
+                <ul class="lang-menu"><li class="lang-menu__item lang-menu__item--active"><a class="lang-menu__link" href="https://intellias.com">En</a></li><li class="lang-menu__item "><a class="lang-menu__link" href="https://intellias.com/de/">De</a></li></ul>            </div>
+        </div>
+    </div>
+</div>    </header>
+    
+
+
+        <style>
+            .header-media-bg {background-image: url(https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/intellias-bg-main-391x520.jpg)}
+            @media (min-width: 560px) {.header-media-bg {background-image: url(https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/intellias-bg-main.jpg)}}
+        </style>
+        <div class="section-header">
+        <div class="header-media-bg skip_lazy">
+                    </div>
+
+        <div class="container section-header__title-w">
+           <h1 class="section-header__title h1">Crafting technology excellence. For ideas that matter</h1>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>    <main class="home-content">
+
+            
+    <section class="technologies-section container">
+        
+        
+        <div class="technologies-logos">
+            <span class="technologies-logos__item"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/forbes.svg.gzip" alt="forbes" class="technologies-logos__img lazy" loading="lazy" data-object-fit="contain" width="109" height="28" ></span><span class="technologies-logos__item"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/iaop-black.png" alt="IAOP black" class="technologies-logos__img lazy" loading="lazy" data-object-fit="contain" width="93" height="50" ></span><span class="technologies-logos__item"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/gsauk.png" alt="GSAUK" class="technologies-logos__img lazy" loading="lazy" data-object-fit="contain" width="71" height="54" ></span><span class="technologies-logos__item"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/inc5000.png" alt="Inc5000" class="technologies-logos__img lazy" loading="lazy" data-object-fit="contain" width="70" height="54" ></span><span class="technologies-logos__item"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/iaop-100.svg.gzip" alt="iaop 100" class="technologies-logos__img lazy" loading="lazy" data-object-fit="contain" width="121" height="52" ></span>        </div>
+    </section>
+        <div class="container">
+            <section class="home-who-we">
+	<div class="home-who-we__descr">
+		<h2 class="h2 home-who-we__title">Who we are</h2>
+
+		<div class="home-who-we__content text-block">
+			<p>Intellias is a global technology partner that enables the sustained success of top-tier organizations and Fortune 500 companies. By delivering value to our partners and clients with the power of technology, we inspire confidence that their digital initiatives will succeed. They trust us with finding solutions to the toughest challenges and breaking constraints on their way to meaningful innovation in a dynamic market environment.<br />
+Based on 20 years of market experience, Intellias people-centric approach and passion for client success unite engineers, creators, and innovators across Europe, North America, and the Middle East.</p>
+		</div>
+
+		<a href="https://intellias.com/who-we-are/" class="btn btn-text btn-text--large home-who-we__more">Get to know us<span></span></a>
+	</div>
+
+	<div class="home-who-we__info">
+
+		<ul class="about-statistics">
+			<li class="about-statistics__item">
+						<p class="about-statistics__numeric">
+							<span class="about-statistics__numeric-text">98%</span>
+						</p>
+
+						<p class="about-statistics__descr">Customer<br> satisfaction rate</p>
+					</li><li class="about-statistics__item">
+						<p class="about-statistics__numeric">
+							<span class="about-statistics__numeric-text">25</span>
+						</p>
+
+						<p class="about-statistics__descr">Countries where clients<br> are located</p>
+					</li><li class="about-statistics__item">
+						<p class="about-statistics__numeric">
+							<span class="about-statistics__numeric-text">20</span>
+						</p>
+
+						<p class="about-statistics__descr">Years in the industry</p>
+					</li><li class="about-statistics__item">
+						<p class="about-statistics__numeric">
+							<span class="about-statistics__numeric-text">2500</span>
+						</p>
+
+						<p class="about-statistics__descr">Professionals</p>
+					</li>		</ul>
+	</div>
+	<div class="text-right home-who-we__more mob">
+		<a href="https://intellias.com/who-we-are/" class="btn btn-text btn-text--large">Get to know us<span></span></a>
+	</div>
+</section>
+    <section class="tech-expertise-section">
+
+        <h2 class="tech-expertise-section__title h3 section__title">Industries in focus</h2>
+        <p class="tech-expertise-section__subtitle"></p>
+
+        <div class="fw-carousel fw-carousel--tech-impacts">
+            <div id="tech-expertise-slider" class="tech-expertise-list col-6 fw-slider"><span class="tech-expertise-list__item item  ">
+		<a href="https://intellias.com/automotive/" class="tech-expertise-list__inner">
+			<div class="tech-expertise-list__content">
+				<div class="tech-expertise-list__icon"><img class="services-list__icon lazy" alt="Automotive" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/car.svg.gzip" width="45" height="45"></div>
+
+				<h3 class="tech-expertise-list__title h5">Automotive</h3>
+
+				<div class="tech-expertise-list__descr">
+					From ADAS engineering and autonomous driving to digital mapping, connectivity, and telematics solutions, Intellias makes the transition of the automotive industry to digital happen
+				</div>
+
+				<div class="btn btn-text btn-text--large tech-expertise-list__more">Learn more <span></span></div>
+
+				<div class="btn-filled tech-expertise-list__more-mob">Learn more</div>
+			</div>
+
+			<div class="tech-expertise-list__photo">
+				<img class="tech-expertise-list__photo-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2019/02/automotive-hover-290x440.png" alt="Automotive" width="290" height="440" data-object-fit="cover" />
+			</div>
+		</a>
+	</span><span class="tech-expertise-list__item item  ">
+		<a href="https://intellias.com/fintech/" class="tech-expertise-list__inner">
+			<div class="tech-expertise-list__content">
+				<div class="tech-expertise-list__icon"><img class="services-list__icon lazy" alt="FinTech" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/fintech.svg.gzip" width="45" height="45"></div>
+
+				<h3 class="tech-expertise-list__title h5">FinTech</h3>
+
+				<div class="tech-expertise-list__descr">
+					In navigating the digital side of the financial services sector with advanced tech expertise and deep industry knowledge, we secure the best customer experiences and open up business opportunities
+				</div>
+
+				<div class="btn btn-text btn-text--large tech-expertise-list__more">Learn more <span></span></div>
+
+				<div class="btn-filled tech-expertise-list__more-mob">Learn more</div>
+			</div>
+
+			<div class="tech-expertise-list__photo">
+				<img class="tech-expertise-list__photo-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2019/02/fintech-hover-290x440.png" alt="FinTech" width="290" height="440" data-object-fit="cover" />
+			</div>
+		</a>
+	</span><span class="tech-expertise-list__item item  ">
+		<a href="https://intellias.com/transportation-logistics-software-solutions/" class="tech-expertise-list__inner">
+			<div class="tech-expertise-list__content">
+				<div class="tech-expertise-list__icon"><img class="services-list__icon lazy" alt="Transportation & Mobility" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/supply-chain-90x90-1.png" width="45" height="45"></div>
+
+				<h3 class="tech-expertise-list__title h5">Transportation & Mobility</h3>
+
+				<div class="tech-expertise-list__descr">
+					We help transportation companies and mobility solution providers embrace digital to connect people and places with an ecosystem of smart transport solutions and new technology
+				</div>
+
+				<div class="btn btn-text btn-text--large tech-expertise-list__more">Learn more <span></span></div>
+
+				<div class="btn-filled tech-expertise-list__more-mob">Learn more</div>
+			</div>
+
+			<div class="tech-expertise-list__photo">
+				<img class="tech-expertise-list__photo-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/01/transportation-hover-390x520-290x440.jpg" alt="Transportation & Mobility" width="290" height="440" data-object-fit="cover" />
+			</div>
+		</a>
+	</span><span class="tech-expertise-list__item item  ">
+		<a href="https://intellias.com/telecom-software-development/" class="tech-expertise-list__inner">
+			<div class="tech-expertise-list__content">
+				<div class="tech-expertise-list__icon"><img class="services-list__icon lazy" alt="Telecom" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/telecomunications.svg-1.svg.gzip" width="45" height="45"></div>
+
+				<h3 class="tech-expertise-list__title h5">Telecom</h3>
+
+				<div class="tech-expertise-list__descr">
+					By empowering telcos to deliver stability, data security, and customer-centric innovation, we catalyze their value-based transformation through technology and industry excellence
+				</div>
+
+				<div class="btn btn-text btn-text--large tech-expertise-list__more">Learn more <span></span></div>
+
+				<div class="btn-filled tech-expertise-list__more-mob">Learn more</div>
+			</div>
+
+			<div class="tech-expertise-list__photo">
+				<img class="tech-expertise-list__photo-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/07/Platform-Development_dark-290x440.jpg" alt="Telecom" width="290" height="440" data-object-fit="cover" />
+			</div>
+		</a>
+	</span><span class="tech-expertise-list__item item  ">
+		<a href="https://intellias.com/retail-software-development-services/" class="tech-expertise-list__inner">
+			<div class="tech-expertise-list__content">
+				<div class="tech-expertise-list__icon"><img class="services-list__icon lazy" alt="Retail" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2019/06/retail.png" width="45" height="45"></div>
+
+				<h3 class="tech-expertise-list__title h5">Retail</h3>
+
+				<div class="tech-expertise-list__descr">
+					Retail software development services for businesses to provide consistent and customer-centric shopping experiences across all channels
+				</div>
+
+				<div class="btn btn-text btn-text--large tech-expertise-list__more">Learn more <span></span></div>
+
+				<div class="btn-filled tech-expertise-list__more-mob">Learn more</div>
+			</div>
+
+			<div class="tech-expertise-list__photo">
+				<img class="tech-expertise-list__photo-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2019/06/retail-industry-1-290x440.jpg" alt="Retail" width="290" height="440" data-object-fit="cover" />
+			</div>
+		</a>
+	</span><span class="tech-expertise-list__item item  ">
+		<a href="https://intellias.com/agriculture-software-development/" class="tech-expertise-list__inner">
+			<div class="tech-expertise-list__content">
+				<div class="tech-expertise-list__icon"><img class="services-list__icon lazy" alt="Agriculture" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2017/09/agronomy.png" width="45" height="45"></div>
+
+				<h3 class="tech-expertise-list__title h5">Agriculture</h3>
+
+				<div class="tech-expertise-list__descr">
+					AgriTech and precision farming software development services for agriculture businesses to make data-driven decisions resulting in sustainable business growth
+				</div>
+
+				<div class="btn btn-text btn-text--large tech-expertise-list__more">Learn more <span></span></div>
+
+				<div class="btn-filled tech-expertise-list__more-mob">Learn more</div>
+			</div>
+
+			<div class="tech-expertise-list__photo">
+				<img class="tech-expertise-list__photo-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2019/10/agriculture-hover-390x520-290x440.jpg" alt="Agriculture" width="290" height="440" data-object-fit="cover" />
+			</div>
+		</a>
+	</span></div>        </div>
+    </section>
+        </div>
+
+            <section class="home-our-story">
+        
+        <div class="home-our-story__bg lazy" style="" data-bg="url(https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/global-impact-bg.jpg)" ></div>
+
+        <div class="container home-our-story__content">
+            <div class="row">
+                <div class="home-our-story_text-block">
+                    <h2 class="h4">
+                        <p>Our global impact</p>
+                    </h2>
+                    <p class="content">Intellias is a global technology partner leading change in transforming industries and generating long-lasting value for businesses, people, and the global community
+                    </p>
+                                            <a href="https://intellias.com/who-we-are/"
+                           class="btn btn-text btn-text--large">Our story                            <span></span></a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container trusted-section">
+        <h2 class="h2">Partners and clients</h2>
+
+        <div id="trusted-section__clients" class="trusted-section__clients trusted_container">
+            <a href="https://intellias.com/clients/" class="item" ><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/06/here1.svg.gzip" alt="here1" loading="lazy" width="126" height="118" ></a><a href="https://intellias.com/clients/" class="item" ><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/06/LG1.svg.gzip" alt="LG1" loading="lazy" width="110" height="49" ></a><a href="https://intellias.com/clients/" class="item" ><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/06/siemens1.svg.gzip" alt="siemens1" loading="lazy" width="140" height="23" ></a><a href="https://intellias.com/clients/" class="item" ><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/06/kia1.svg.gzip" alt="kia1" loading="lazy" width="110" height="57" ></a><a href="https://intellias.com/clients/" class="item" ><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/tomtom-brand-logo.svg.gzip" alt="tomtom-brand-logo" loading="lazy" width="121" height="20" ></a><a href="https://intellias.com/clients/" class="item" ><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/hellofresh-new.png" alt="hellofresh-new" loading="lazy" width="91" height="30" ></a><a href="https://intellias.com/clients/" class="item" ><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/swissquotebank.png" alt="SwissquoteBank" loading="lazy" width="171" height="45" ></a>        </div>
+
+                    <div class="trusted-section__btn-wrap">
+                <a href="https://intellias.com/clients/" class="btn btn-text large">
+                    Learn more<span></span>
+                                            <span class="screen-reader-text">Partners and clients</span>
+                                    </a>
+            </div>
+            </section>
+
+        
+<section class="home-news container">
+		<div class="home-news__links-block">
+			<h2 class="h2">What's new</h2>
+
+			
+    <ul class="tabs-links">
+        <li><a href="#" class="news-tab-link" data-filter=".news" style="background-image: linear-gradient(rgba(106,188,232,1), rgba(106,188,232,1)), linear-gradient(#6abce8, #6abce8); background-repeat: no-repeat, no-repeat; background-attachment: scroll, scroll; background-clip: border-box, border-box; background-origin: padding-box, padding-box;">News</a></li><li><a href="#" class="case-tab-link" data-filter=".case-study" style="background-image: linear-gradient(rgba(172,105,189,1), rgba(172,105,189,1)), linear-gradient(#ac69bd, #ac69bd); background-repeat: no-repeat, no-repeat; background-attachment: scroll, scroll; background-clip: border-box, border-box; background-origin: padding-box, padding-box;">Case study</a></li><li><a href="#" class="blog-tab-link" data-filter=".blog-post" style="background-image: linear-gradient(rgba(149,225,113,1), rgba(149,225,113,1)), linear-gradient(#95e171, #95e171); background-repeat: no-repeat, no-repeat; background-attachment: scroll, scroll; background-clip: border-box, border-box; background-origin: padding-box, padding-box;">Blog post</a></li><li><a href="#" class="all-news-tab-link active" data-filter="all">All categories</a></li>    </ul>
+    		</div>
+
+		<div class="news">
+			<div id="post-inner__slider" class="news__row fw-slider row active" data-cat="all">
+				<div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/competitive-edge-for-lidar-providers/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">How Software Can Give LiDAR Providers a Competitive Edge</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/01/bp-lidar-sensor-header-370x240.jpg" alt="How Software Can Give LiDAR Providers a Competitive Edge" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix news news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/forbes-ranks-intellias-as-1-it-employer-in-ukraine/" class="news__item-inner news inline-styles">
+			<div class="hover-styles" style="color: #6abce8; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #6abce8;">News</p></div>
+			<h3 class="news__item-title h5">Forbes Ranks Intellias as #1 IT Employer in Ukraine</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/01/pr-forbes-header-370x240.jpg" alt="Forbes Ranks Intellias as #1 IT Employer in Ukraine" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix case-study news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/software-for-construction-of-solar-power-plants/" class="news__item-inner case-study inline-styles">
+			<div class="hover-styles" style="color: #ac69bd; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #ac69bd;">Case study</p></div>
+			<h3 class="news__item-title h5">Innovative Software for Construction of Solar Power Plants</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/01/cs-mossassociates-header-370x240.jpg" alt="Innovative Software for Construction of Solar Power Plants" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/personalization-at-scale-turning-future-into-reality/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">Personalization at Scale: Turning the Future into Reality</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2021/11/mass-personalization-for-business-header-1-370x240.jpg" alt="Personalization at Scale: Turning the Future into Reality" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix case-study news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/digital-consulting-for-biotechnology-company/" class="news__item-inner case-study inline-styles">
+			<div class="hover-styles" style="color: #ac69bd; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #ac69bd;">Case study</p></div>
+			<h3 class="news__item-title h5">Digital Consulting for an Innovative Biotechnology Company</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2021/06/oxitec-header-370x240.jpg" alt="Digital Consulting for an Innovative Biotechnology Company" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/the-most-disruptive-technologies-of-the-next-decade/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">The Most Disruptive Technologies of the Next Decade</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/08/header--370x240.jpg" alt="The Most Disruptive Technologies of the Next Decade" width="370" height="240">
+			</div>	
+		</a>
+	</div>			</div>
+
+			
+			<div class="news__row row" data-cat="case-study">
+				<div class="mix case-study news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/business-intelligence-for-retail-ecommerce-analytics-to-boost-sales/" class="news__item-inner case-study inline-styles">
+			<div class="hover-styles" style="color: #ac69bd; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #ac69bd;">Case study</p></div>
+			<h3 class="news__item-title h5">Business Intelligence for Retail & eCommerce Analytics to Boost Sales</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/04/pic-header-370x240.jpg" alt="Business Intelligence for Retail & eCommerce Analytics to Boost Sales" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix case-study news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/comprehensive-technology-assessment-for-a-digital-bank/" class="news__item-inner case-study inline-styles">
+			<div class="hover-styles" style="color: #ac69bd; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #ac69bd;">Case study</p></div>
+			<h3 class="news__item-title h5">Comprehensive Technology Assessment for a Digital Bank</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/04/agtb-header-1-370x240.jpg" alt="Comprehensive Technology Assessment for a Digital Bank" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix case-study news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/cloud-transportation-software/" class="news__item-inner case-study inline-styles">
+			<div class="hover-styles" style="color: #ac69bd; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #ac69bd;">Case study</p></div>
+			<h3 class="news__item-title h5">Cloud Transportation Software for Routing and Smart City Planning</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/04/Cloud-Based-Transportation-Platform.pdf-370x240.jpg" alt="Cloud Transportation Software for Routing and Smart City Planning" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix case-study news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/electric-vehicle-trip-planner-for-multi-stop-routing/" class="news__item-inner case-study inline-styles">
+			<div class="hover-styles" style="color: #ac69bd; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #ac69bd;">Case study</p></div>
+			<h3 class="news__item-title h5">Electric Vehicle Trip Planner for Multi-Stop Routing</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/02/header-1-370x240.png" alt="Electric Vehicle Trip Planner for Multi-Stop Routing" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix case-study news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/cloud-service-for-a-digital-twin-modeling-system/" class="news__item-inner case-study inline-styles">
+			<div class="hover-styles" style="color: #ac69bd; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #ac69bd;">Case study</p></div>
+			<h3 class="news__item-title h5">Cloud Service for a Digital Twin Modeling System</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/01/navvis-header-370x240.jpg" alt="Cloud Service for a Digital Twin Modeling System" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix case-study news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/integrated-workplace-management-system-for-building-efficiency-and-employee-comfort/" class="news__item-inner case-study inline-styles">
+			<div class="hover-styles" style="color: #ac69bd; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #ac69bd;">Case study</p></div>
+			<h3 class="news__item-title h5">Integrated Workplace Management Software for Building Efficiency and Employee Comfort</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2019/12/osram-header-370x240.jpg" alt="Integrated Workplace Management Software for Building Efficiency and Employee Comfort" width="370" height="240">
+			</div>	
+		</a>
+	</div>			</div>
+
+			
+			<div class="news__row row" data-cat="blog-post">
+				<div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/how-to-create-a-digital-wallet-for-iot-payments/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">How to Create a Digital Wallet for IoT Payments</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/04/header-2-370x240.png" alt="How to Create a Digital Wallet for IoT Payments" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/guidelines-for-creating-your-efficient-eld-software/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">Guidelines for Creating Your Efficient ELD Software</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/03/header-370x240.png" alt="Guidelines for Creating Your Efficient ELD Software" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/indoor-positioning-technologies-as-a-rising-force-in-retail-sales/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">Indoor Positioning Technologies as a Rising Force in Retail Sales</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/03/Indoor-navigation-and-wayfinding-article-02-370x240.jpg" alt="Indoor Positioning Technologies as a Rising Force in Retail Sales" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/how-to-encourage-farmers-to-use-big-data-analytics-in-agriculture/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">How to Implement Big Data Analytics in Agriculture: 5 Business Use Cases</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/03/Big-data-analytics-in-agriculture-370x240.jpg" alt="How to Implement Big Data Analytics in Agriculture: 5 Business Use Cases" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/focus-on-risks-trends-that-will-define-iot-security-in-2020/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">Focus on Risks: Trends That Will Define IoT Security in 2020</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/02/IoT-Security-Predictions-02-370x240.jpg" alt="Focus on Risks: Trends That Will Define IoT Security in 2020" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix blog-post news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/opportunities-and-challenges-of-artificial-intelligence-in-the-energy-sector/" class="news__item-inner blog-post inline-styles">
+			<div class="hover-styles" style="color: #95e171; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #95e171;">Blog post</p></div>
+			<h3 class="news__item-title h5">Opportunities and Challenges of Artificial Intelligence in the Energy Sector</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/02/header-370x240.png" alt="Opportunities and Challenges of Artificial Intelligence in the Energy Sector" width="370" height="240">
+			</div>	
+		</a>
+	</div>			</div>
+
+			
+			<div class="news__row row" data-cat="news">
+				<div class="mix news news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/intellias-names-president-of-north-america-region/" class="news__item-inner news inline-styles">
+			<div class="hover-styles" style="color: #6abce8; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #6abce8;">News</p></div>
+			<h3 class="news__item-title h5">Intellias Names President of North America Region</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/10/Intellias-representative-in-North-America-370x240.jpg" alt="Intellias Names President of North America Region" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix news news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/intellias-expert-to-speak-at-scaleup-360-auto-vision-digital-summit/" class="news__item-inner news inline-styles">
+			<div class="hover-styles" style="color: #6abce8; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #6abce8;">News</p></div>
+			<h3 class="news__item-title h5">Intellias Expert to Speak at ScaleUp 360° Auto Vision Digital Summit</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/03/headerimage-01-1-370x240.jpg" alt="Intellias Expert to Speak at ScaleUp 360° Auto Vision Digital Summit" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix news news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/intellias-releases-its-agritech-whitepaper/" class="news__item-inner news inline-styles">
+			<div class="hover-styles" style="color: #6abce8; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #6abce8;">News</p></div>
+			<h3 class="news__item-title h5">Intellias Releases Its AgriTech Whitepaper</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2020/04/Sustainable-Agriculture-Whitepaper-by-Intellias-370x240.jpg" alt="Intellias Releases Its AgriTech Whitepaper" width="370" height="240">
+			</div>	
+		</a>
+	</div><div class="mix news news__item col-md-4 col-sm-6 col-xs-12">
+		<a href="https://intellias.com/intellias-ranked-as-a-clutch-leader-in-software-development-and-artificial-intelligence-categories/" class="news__item-inner news inline-styles">
+			<div class="hover-styles" style="color: #6abce8; background-color: #fff;"><p class="news__item-cat news-cat" style="background-color: #6abce8;">News</p></div>
+			<h3 class="news__item-title h5">Intellias Ranked as a Clutch Leader in Software Development and Artificial Intelligence Categories</h3>
+			<div class="news-image-wrap news__item-image-wrap">
+				<img class="news__item-image lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2019/02/IAOP-listed-Intellias-370x240.png" alt="Intellias Ranked as a Clutch Leader in Software Development and Artificial Intelligence Categories" width="370" height="240">
+			</div>	
+		</a>
+	</div>			</div>
+		</div>
+
+		<div class="blog-page-link"><a href="https://intellias.com/blog/" class="btn btn-text">View all<span></span></a></div></section>
+            <section class="section-call-to-action">
+        <div class="container">
+            <div class="section-call-to-action__row">
+                <h2 class="h2">Tell us about your project</h2>
+                <div class="section-call-to-action__wrap">
+                    <div class="section-call-to-action__form">
+                        <div role="form" class="wpcf7" id="wpcf7-f5-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response" aria-live="polite"></div>
+<form action="/#wpcf7-f5-o1" method="post" class="wpcf7-form cmonitor-ext-0.4.50" enctype="multipart/form-data" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="5" />
+<input type="hidden" name="_wpcf7_version" value="5.1.9" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+</div>
+<div class="input-group">
+    <label class="form-label" for="your-name"><span class="placeholder-similar">Name*</span></label>
+    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" id="your-name" aria-required="true" aria-invalid="false" /></span>
+</div>
+<div class="input-group">
+    <label class="form-label" for="your-email"><span class="placeholder-similar">Email*</span></label>
+    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" id="your-email" aria-required="true" aria-invalid="false" /></span> 
+</div>
+<div class="input-group">
+    <label class="form-label" for="tel-938"><span class="placeholder-similar">Phone</span></label>
+    <span class="wpcf7-form-control-wrap tel-938"><input type="tel" name="tel-938" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" id="tel-938" aria-invalid="false" /></span>
+</div>
+<div class="input-group">
+   <label class="form-label" for="your-message"><span class="placeholder-similar">Message*</span></label>
+   <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" id="your-message" aria-required="true" aria-invalid="false"></textarea></span> 
+</div>
+<div class="bottom-fields">
+ <label class="form-label"><i class="attach-icon"></i>
+ <span class="file-text file-text--descktop"> Upload or drag & drop files (5mb)</span>
+<span class="file-text file-text--mobile"> Upload file (5mb)</span>
+ <span class="wpcf7-form-control-wrap file-961"><input type="file" name="file-961" size="40" class="wpcf7-form-control wpcf7-file" accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.odp,.ods,.rtf,.txt" aria-invalid="false" /></span></label>
+
+
+<span class="wpcf7-form-control-wrap checkbox-accept"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required accept-contact-terms require"><span class="wpcf7-list-item first last"><input type="checkbox" name="checkbox-accept[]" value="I give consent to the processing of my personal data given in the contact form above under the terms and conditions of Intellias Privacy Policy." /><span class="wpcf7-list-item-label">I give consent to the processing of my personal data given in the contact form above under the terms and conditions of Intellias Privacy Policy.</span></span></span></span>
+
+<span class="wpcf7-form-control-wrap checkbox-accept-mail"><span class="wpcf7-form-control wpcf7-checkbox accept-contact-terms"><span class="wpcf7-list-item first last"><input type="checkbox" name="checkbox-accept-mail[]" value="I want to receive commercial communications and marketing information from Intellias by electronic means of communication (including telephone and e-mail)." /><span class="wpcf7-list-item-label">I want to receive commercial communications and marketing information from Intellias by electronic means of communication (including telephone and e-mail).</span></span></span></span>
+
+<span class="wpcf7-form-control-wrap agree"><span class="wpcf7-form-control wpcf7-acceptance invert"><span class="wpcf7-list-item"><input type="checkbox" name="agree" value="1" aria-invalid="false" checked="checked" class="agree" /></span></span></span>
+ <div class="vertical-al">
+<span class="wpcf7-form-control-wrap dynamichidden-428"><input type="hidden" name="dynamichidden-428" value="" size="40" class="wpcf7-form-control wpcf7dtx-dynamictext wpcf7-dynamichidden clientreferer" aria-invalid="false" /></span>
+<span class="wpcf7-form-control-wrap dynamichidden-232"><input type="hidden" name="dynamichidden-232" value="" size="40" class="wpcf7-form-control wpcf7dtx-dynamictext wpcf7-dynamichidden clientland" aria-invalid="false" /></span>
+<div class="recaptcha-wrap"><div class="anr_captcha_field"><div id="anr_captcha_field_1" class="anr_captcha_field_div"></div></div><noscript>
+						  <div>
+							<div style="width: 302px; height: 422px; position: relative;">
+							  <div style="width: 302px; height: 422px; position: absolute;">
+								<iframe src="https://www.google.com/recaptcha/api/fallback?k=6Lf3PTIUAAAAAP3Af5f5v7drRi5fnnSOl3oAw237"
+										frameborder="0" scrolling="no"
+										style="width: 302px; height:422px; border-style: none;">
+								</iframe>
+							  </div>
+							</div>
+							<div style="width: 300px; height: 60px; border-style: none;
+										   bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
+										   background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+							  <textarea id="g-recaptcha-response-1" name="g-recaptcha-response"
+										   class="g-recaptcha-response"
+										   style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
+												  margin: 10px 25px; padding: 0px; resize: none;" ></textarea>
+							</div>
+						  </div>
+						</noscript><span class="wpcf7-form-control-wrap g-recaptcha-response"></span></div>
+<input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit btn-filled" />
+ </div>
+</div>
+
+
+<div class="require-terms-checkbox-html hidden-element"><i class='req-checkbox'>*</i> 
+I give consent to the processing of my personal data given in the contact form above under the terms and conditions of Intellias <a href='/privacy-policy/'>Privacy Policy</a>.
+</div>
+<div class="wpcf7-response-output wpcf7-display-none" aria-hidden="true"></div></form></div>                    </div>
+                    <div class="section-call-to-action__logos">
+                        <h3 class="subtitle">Awards and recognition</h3>
+                        <div class="row logo_block">
+                                                                <div class="col-md-4">
+                                       <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/ey-1.svg.gzip" alt="ey 1" data-object-fit="contain" width="90" height="44" >                                    </div>
+                                                                    <div class="col-md-4">
+                                       <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/iaop.png" alt="iaop" data-object-fit="contain" width="85" height="44" >                                    </div>
+                                                                    <div class="col-md-4">
+                                       <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/inc_5000europe.png" alt="inc_5000europe" data-object-fit="contain" width="65" height="50" >                                    </div>
+                                                                    <div class="col-md-4">
+                                       <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/clutch-logo.png" alt="Clutch logo" data-object-fit="contain" width="85" height="34" >                                    </div>
+                                                                    <div class="col-md-4">
+                                       <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/uploads/2022/02/gsa-pa-logo-finalist.png" alt="GSA PA logo Finalist" data-object-fit="contain" width="71" height="54" >                                    </div>
+                                                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-result-message hidden-element"><svg class="icon-svg icon-send form-result-message__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://intellias.com/wp-content/themes/intellias-theme/assets/img/sprite.svg#icon-send"></use></svg><p class="h5 form-result-message__text">Thank you for your message.<br />We will get back to you shortly.</p></div>    </section>
+    </main>
+<footer class="footer">
+    <div class="container">
+        <div class="row footer__row">
+            <div class="col-xs-12 col-md-9 footer-locations">
+                <div class="footer-logo-wrap">
+                    <a class="logo" href="https://intellias.com/" rel="home" title="Intellias"><svg class="logo" viewBox="0 0 152 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<use xlink:href="#logo" />
+			</svg></a>
+                    <div class="footer-partners">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://intellias.com/wp-content/themes/intellias-theme/assets/img/aws-logo.svg"
+                             alt="AWS Consulting Partner" title="AWS Consulting Partner" loading="lazy" width="75" height="80">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://intellias.com/wp-content/themes/intellias-theme/assets/img/microsoft-logo.svg"
+                             alt="Gold Microsoft Partner" title="Gold Microsoft Partner" loading="lazy" width="75" height="80">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-src="https://intellias.com/wp-content/themes/intellias-theme/assets/img/google-cloud-logo.svg"
+                             alt="Google Cloud Partner" title="Google Cloud Partner" loading="lazy" width="75" height="80">
+                    </div>
+                </div>
+
+                                    <div  class="footer-locations__item">
+                        <address>
+                            <b class="footer-locations__item-title">Chicago</b>
+                            <div class="footer-locations__item-description">
+                                <p>500 West Madison Street, Suite 1000, Chicago, IL 60661</p>
+                                <p><a href="tel:+12156086081">+1 215-608-6081</a></p>
+                                <p><a href="mailto:info-chicago@intellias.com">info-chicago@intellias.com</a></p>
+                            </div>
+                        </address>
+                    </div>
+
+                    <div id="dynamic-location-country" class="footer-locations__item lazy"></div>
+                    
+
+            </div>
+
+            <div class="col-xs-12 col-md-3  footer-links-side">
+                <div class="footer-social-links-wrap">
+                    <div class="social-container"><ul id="menu-social-menu" class="social"><li id="menu-item-414" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-414"><a href="https://www.facebook.com/Intellias.International/"><span class="screen-reader-text">Intellias Facebook Page</span></a></li>
+<li id="menu-item-416" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-416"><a href="https://www.linkedin.com/company/49445/"><span class="screen-reader-text">Intellias LinkedIn Page</span></a></li>
+<li id="menu-item-415" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-415"><a href="https://twitter.com/intellias"><span class="screen-reader-text">Intellias Twitter Account</span></a></li>
+<li id="menu-item-417" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-417"><a href="https://www.xing.com/companies/intellias-intelligentnearshoreoutsourcing"><span class="screen-reader-text">Intellias Xing Page</span></a></li>
+</ul></div>
+                    <a href="https://intellias.com/locations/"
+                       title="Other locations"
+                       class="btn-clear btn-locations">Other locations</a>
+
+                                            <a href="https://intellias.com/subscribe-to-our-blog/"
+                           title="Subscribe to our blog"
+                           class="btn-clear btn-locations mt-10">Subscribe to our blog</a>
+
+                                    </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="footer-bottom">
+                    <section class="footer-area widget-area"><aside class="text-4 widget widget_text">			<div class="textwidget"><p>2002-2022 Intellias Ltd. All rights reserved. | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/cookie-policy/">Cookie Policy</a> | <a href="https://intellias.com/csr-report-2020/">CSR Report</a> | <a href="https://intellias.com/html-sitemap/">Sitemap</a></p>
+<p><a href="mailto:info@intellias.com">info@intellias.com</a></p>
+</div>
+		</aside></section>                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="mobile-sidebar-menu" class="mobile-sidebar-menu">
+
+    <div class="mobile-sidebar-menu__inner container"> 
+        <form action="https://intellias.com/" class="search-form"  autocomplete="off">
+            <div class="search-form__inner">
+    <button class="search-form__submit" aria-label="Search" value="Search">
+        <svg class="icon-svg icon-search" width="22" height="22" viewBox="0 0 22 22">
+            <path  fill-rule="nonzero"  d="M8.795 16.504a7.57 7.57 0 0 0 4.923-1.795l5.983 5.983a.685.685 0 0 0 .496.205.702.702 0 0 0 .496-1.197l-5.984-5.982a7.697 7.697 0 0 0 1.795-4.923 7.711 7.711 0 0 0-7.71-7.71c-4.238 0-7.709 3.47-7.709 7.71 0 4.256 3.47 7.71 7.71 7.71zm0-14.017a6.314 6.314 0 0 1 6.308 6.308 6.303 6.303 0 0 1-6.308 6.308 6.314 6.314 0 0 1-6.308-6.308c0-3.47 2.838-6.308 6.308-6.308z"/>
+        </svg>
+        
+        <span class="search-form__loader"></span>
+    </button>
+    <input type="search" class="search-form__input" name="s" required="required" aria-label="Type your search here" placeholder="Type your search here" value=""/>
+
+    <i class="search-form__clear">x</i>
+
+    <button class="btn btn-filled btn-get" type="submit" value="Search">Search</button>
+</div>
+
+<div class="search-form__dropdown"></div>        </form>
+
+        <div class="mobile-menu-wrapper">
+            <ul id="footer-menu" class="mobile-menu"><li id="menu-item-629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-629"><a href="#">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-23207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23207"><a href="https://intellias.com/services-overview/">Services Overview</a></li>
+	<li id="menu-item-37847" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-37847"><a href="#">Consulting</a></li>
+	<li id="menu-item-23206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23206"><a href="https://intellias.com/software-engineering-services/">Engineering</a></li>
+	<li id="menu-item-23208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23208"><a href="https://intellias.com/advanced-technology/">Technology</a></li>
+	<li id="menu-item-23205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23205"><a href="https://intellias.com/solution-operations/">Operations</a></li>
+</ul>
+</li>
+<li id="menu-item-1800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1800"><a href="#">Expertise</a>
+<ul class="sub-menu">
+	<li id="menu-item-26243" class="menu-item menu-item-type-post_type menu-item-object-exprertises menu-item-26243"><a href="https://intellias.com/platform-development/">Platform Development</a></li>
+	<li id="menu-item-37692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37692"><a href="https://intellias.com/custom-software-development/">Custom Development</a></li>
+	<li id="menu-item-1376" class="menu-item menu-item-type-post_type menu-item-object-exprertises menu-item-1376"><a href="https://intellias.com/data-science-and-big-data/">Big Data &#038; Analytics</a></li>
+	<li id="menu-item-23924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-23924"><a href="https://intellias.com/cloud-development-services/">Cloud</a></li>
+	<li id="menu-item-24705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24705"><a href="https://intellias.com/devops-services/">DevOps</a></li>
+	<li id="menu-item-21548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21548"><a href="https://intellias.com/machine-learning-artificial-intelligence-development-services/">Machine Learning &#038; AI</a></li>
+	<li id="menu-item-6735" class="menu-item menu-item-type-post_type menu-item-object-exprertises menu-item-6735"><a href="https://intellias.com/ux-ui-design/">UI/UX Design</a></li>
+	<li id="menu-item-22476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22476"><a href="https://intellias.com/internet-of-things/">Internet of Things</a></li>
+	<li id="menu-item-12993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12993"><a href="https://intellias.com/location-based-services/">Location Based Services</a></li>
+	<li id="menu-item-22875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22875"><a href="https://intellias.com/blockchain-development-services/">Blockchain</a></li>
+	<li id="menu-item-24707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24707"><a href="https://intellias.com/cybersecurity-consulting-services/">Cybersecurity</a></li>
+	<li id="menu-item-32700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32700"><a href="https://intellias.com/robotic-process-automation-services/">RPA</a></li>
+</ul>
+</li>
+<li id="menu-item-1804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1804"><a href="#">Industries</a>
+<ul class="sub-menu">
+	<li id="menu-item-3437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3437"><a href="https://intellias.com/automotive/">Automotive</a></li>
+	<li id="menu-item-10067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10067"><a href="https://intellias.com/fintech/">Finance</a></li>
+	<li id="menu-item-16658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16658"><a href="https://intellias.com/retail-software-development-services/">Retail</a></li>
+	<li id="menu-item-18987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18987"><a href="https://intellias.com/agriculture-software-development/">Agriculture</a></li>
+	<li id="menu-item-20493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20493"><a href="https://intellias.com/transportation-logistics-software-solutions/">Transport &#038; Logistics</a></li>
+	<li id="menu-item-19105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19105"><a href="https://intellias.com/real-estate-software-development/">Real Estate</a></li>
+	<li id="menu-item-17442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17442"><a href="https://intellias.com/energy-utilities/">Energy and Utilities</a></li>
+	<li id="menu-item-39253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39253"><a href="#">Telecom</a></li>
+	<li id="menu-item-25738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25738"><a href="https://intellias.com/elearning-software-development/">eLearning</a></li>
+	<li id="menu-item-26101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26101"><a href="https://intellias.com/insurance-software-development/">Insurance</a></li>
+	<li id="menu-item-26290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26290"><a href="https://intellias.com/healthcare-software-development/">Healthcare</a></li>
+</ul>
+</li>
+<li id="menu-item-1802" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1802"><a href="#">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-1099" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1099"><a href="https://intellias.com/who-we-are/">Who We Are</a></li>
+	<li id="menu-item-1101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1101"><a href="https://intellias.com/leadership/">Leadership</a></li>
+	<li id="menu-item-1111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1111"><a href="https://intellias.com/locations/">Locations</a></li>
+	<li id="menu-item-32886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32886"><a href="https://intellias.com/technology-office/">Technology Office</a></li>
+	<li id="menu-item-35837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35837"><a href="https://career.intellias.com/">Careers</a></li>
+</ul>
+</li>
+<li id="menu-item-1803" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1803"><a href="#">Success stories</a>
+<ul class="sub-menu">
+	<li id="menu-item-1734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1734"><a href="https://intellias.com/our-work/">Case Studies</a></li>
+	<li id="menu-item-1098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1098"><a href="https://intellias.com/clients/">Clients</a></li>
+</ul>
+</li>
+<li id="menu-item-22996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22996"><a href="#">Insights</a>
+<ul class="sub-menu">
+	<li id="menu-item-19507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19507"><a href="https://intellias.com/blog/">Blog</a></li>
+	<li id="menu-item-22995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22995"><a href="https://intellias.com/whitepapers/">Whitepapers</a></li>
+	<li id="menu-item-14137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14137"><a href="https://intellias.com/news/">News</a></li>
+</ul>
+</li>
+</ul>        </div>
+    </div>
+    
+    <div class="footer mobile-sidebar-footer">
+        <div class="container">
+            <div class="row">
+                <ul class="mob-lang-menu"><li class="mob-lang-menu__item mob-lang-menu__item--active"><a class="mob-lang-menu__link" href="https://intellias.com">English</a></li><li class="mob-lang-menu__item "><a class="mob-lang-menu__link" href="https://intellias.com/de/">Deutsch</a></li></ul>
+				<div class="footer-get-button col-xs-12">
+										<a href="https://intellias.com/contact/" class="btn btn-clear">Get in touch</a>
+				</div>
+
+                <div class="col-xs-12 text-right">
+                    <div class="social-container"><ul id="menu-social-menu-1" class="social"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-414"><a href="https://www.facebook.com/Intellias.International/"><span class="screen-reader-text">Intellias Facebook Page</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-416"><a href="https://www.linkedin.com/company/49445/"><span class="screen-reader-text">Intellias LinkedIn Page</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-415"><a href="https://twitter.com/intellias"><span class="screen-reader-text">Intellias Twitter Account</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-417"><a href="https://www.xing.com/companies/intellias-intelligentnearshoreoutsourcing"><span class="screen-reader-text">Intellias Xing Page</span></a></li>
+</ul></div>                </div>
+            </div>
+
+            <div class="mob-footer-last-row row">
+                <div class="col-xs-12">
+                    <div class="footer-bottom">
+                        <section class="footer-area widget-area"><aside class="text-4 widget widget_text">			<div class="textwidget"><p>2002-2022 Intellias Ltd. All rights reserved. | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/cookie-policy/">Cookie Policy</a> | <a href="https://intellias.com/csr-report-2020/">CSR Report</a> | <a href="https://intellias.com/html-sitemap/">Sitemap</a></p>
+<p><a href="mailto:info@intellias.com">info@intellias.com</a></p>
+</div>
+		</aside></section>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="cookie-notice">
+    <div class="container cookie-notice__container">
+        <div class="cookie-notice__content"> 
+            <div class="cookie-notice__icon">
+                <svg class="icon-svg icon-cookies" role="img" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://intellias.com/wp-content/themes/intellias-theme/assets/img/sprite.svg#icon-cookies"></use>
+                </svg>  
+            </div>
+            <div class="cookie-notice__text text-block">              
+                			<div class="textwidget"><p>We use cookies to bring best personalized experience for you.<br />
+By clicking “Accept” below, you agree to our use of cookies as described in the <a href="/cookie-policy/">Cookie Policy</a></p>
+</div>
+		            </div>
+
+            <div class="cookie-notice__buttons-wrap">
+                <a href="https://intellias/clients/" class="cookie-notice__btn cookie-notice__btn--decline">
+                    Decline                </a>
+                <a href="https://intellias/clients/" class="cookie-notice__btn  cookie-notice__btn--accept">
+                    Accept                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="zoom-anim-dialog mfp-hide message-popup form-popup" id="sucess-sending-popup">
+				<div class="form-result-message">
+					<svg class="icon-svg icon-send form-result-message__icon" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://intellias.com/wp-content/themes/intellias-theme/assets/img/sprite.svg#icon-send"></use></svg>
+					<p class="h5 form-result-message__text"> Thank you for your message. <br /> We will get back to you shortly.</p>
+					<button type="button" class="btn btn-filled form-result-message__got">Got it</button>
+				</div>
+			</div>
+
+</div>
+
+
+<div id="footer-action" class="footer-action">
+                <script type="text/javascript">
+                var anr_onloadCallback = function () {
+                    for (var i = 0; i < document.forms.length; i++) {
+                        var form = document.forms[i];
+                        var captcha_div = form.querySelector('.anr_captcha_field_div');
+
+                        if (null === captcha_div)
+                            continue;
+                        captcha_div.innerHTML = '';
+                        (function (form) {
+                            var anr_captcha = grecaptcha.render(captcha_div, {
+                                'sitekey': '6Lf3PTIUAAAAAP3Af5f5v7drRi5fnnSOl3oAw237',
+                                'size': 'normal',
+                                'theme': 'light'
+                            });
+                            if (typeof wc_checkout_params !== 'undefined') {
+                                jQuery(document.body).on('checkout_error', function () {
+                                    grecaptcha.reset(anr_captcha);
+                                });
+                            }
+                            if (typeof wpcf7 !== 'undefined') {
+                                document.addEventListener('wpcf7submit', function () {
+                                    grecaptcha.reset(anr_captcha);
+                                }, false);
+                            }
+                        })(form);
+                    }
+                };
+            </script>
+            
+
+
+            <script type="text/javascript">
+                let mouseTarget = document.querySelectorAll('.wpcf7-form');
+                let $loaded = false;
+                [].forEach.call(mouseTarget,function(el) {
+                    el.addEventListener('mouseenter', e => {
+                        if(!$loaded) {
+                            var file = document.createElement("script");
+                            file.setAttribute("type", "text/javascript");
+                            file.setAttribute("src", "https://www.google.com/recaptcha/api.js?onload=anr_onloadCallback&#038;render=explicit&#038;hl=en");
+                            document.getElementsByTagName("head")[0].appendChild(file);
+                            $loaded = true;
+                        }
+                    });
+                });
+            </script>
+            <link rel='stylesheet' id='intellias-theme-style-css'  href='https://intellias.com/wp-content/themes/intellias-theme/style.css?ver=1.7.7u' type='text/css' media='all' />
+<link rel='stylesheet' id='index-css-css'  href='https://intellias.com/wp-content/themes/intellias-theme/assets/css/pages/index.css?ver=1.7.7u' type='text/css' media='all' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js' id='jquery-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/intellias.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' defer src='https://d3e3a9wpte0df0.cloudfront.net/wp-content/plugins/contact-form-7/includes/js/scripts.js.gzip?ver=5.1.9' id='contact-form-7-js'></script>
+<script type='text/javascript' defer src='https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/js/plugins/bundle-min.js.gzip?ver=1.0.4' id='bundle-min-js'></script>
+<script type='text/javascript' defer src='https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/js/plugins/slick-min.js.gzip?ver=1.0.2' id='slick-js-js'></script>
+<script type='text/javascript' defer src='https://intellias.com/wp-content/themes/intellias-theme/assets/js/pages/contact-min.js?ver=1.7.7u' id='contact-js-js'></script>
+<script type='text/javascript' id='intellias-theme-script-js-extra'>
+/* <![CDATA[ */
+var intellias_theme_script_localize = {"ajaxurl":"https:\/\/intellias.com\/wp-admin\/admin-ajax.php?lang=en","site_url":"https:\/\/intellias.com","noposts":"That's all for now","loadmore":"Show More","positions_data_url":"https:\/\/intellias.com\/wp-content\/uploads\/positions-data.json"};
+/* ]]> */
+</script>
+<script type='text/javascript' defer src='https://intellias.com/wp-content/themes/intellias-theme/assets/js/global-min.js?ver=1.7.7u' id='intellias-theme-script-js'></script>
+<script type='text/javascript' defer src='https://intellias.com/wp-content/themes/intellias-theme/assets/js/menu-min.js?ver=1.7.7u' id='intellias-menu-js'></script>
+<script type='text/javascript' defer src='https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/js/search-min.js.gzip?ver=1.7.7u' id='intellias-search-js'></script>
+<script type='text/javascript' defer src='https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/js/plugins/plyr-min.js.gzip?ver=5.8.1' id='plyr-js-js'></script>
+<script type='text/javascript' defer src='https://d3e3a9wpte0df0.cloudfront.net/wp-content/themes/intellias-theme/assets/js/sections/video_popups-min.js.gzip?ver=5.8.1' id='video_popups-js-js'></script>
+<script type='text/javascript' defer src='https://intellias.com/wp-content/themes/intellias-theme/assets/js/pages/index-min.js?ver=1.7.7u' id='index-page-js-js'></script>
+    <script>(function($,d){$.each(readyQ,function(i,f){$(f)});$.each(bindReadyQ,function(i,f){$(d).bind("ready",f)})})(jQuery,document)</script>
+</div>
+<script>window.w3tc_lazyload=1,window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:function(t){var e;try{e=new CustomEvent("w3tc_lazyload_loaded",{detail:{e:t}})}catch(a){(e=document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded",!1,!1,{e:t})}window.dispatchEvent(e)}}</script><script async src="https://d3e3a9wpte0df0.cloudfront.net/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js.gzip"></script></body>
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "Intellias",
+        "url" : "https://intellias.com",
+        "sameAs" : ["https://www.facebook.com/Intellias.International",
+            "https://www.linkedin.com/company/intellias",
+            "https://twitter.com/intellias"]
+    }
+</script>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 410/1226 objects using disk
+Page Caching using disk: enhanced 
+Content Delivery Network via Amazon Web Services: CloudFront: d3e3a9wpte0df0.cloudfront.net
+Lazy Loading
+
+Served from: intellias.com @ 2022-02-11 02:21:59 by W3 Total Cache
+-->
