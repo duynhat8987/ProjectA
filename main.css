@@ -79,7 +79,7 @@ body{
 }
 
 .header-nav{
-    padding: 5px 20px;
+    padding: 0px 20px;
 }
 
 .color{
@@ -121,6 +121,8 @@ body{
     color: #3cd5af;
     font-size: 22px;
     padding-left: 15px;
+    float: right;
+    padding-right: 550px;
 
 }
 .trusted-section{
@@ -130,7 +132,7 @@ body{
 
 .lazy{
     
-     margin-left: 50px; 
+     margin-left: 100px; 
 }
 
 .lazy-loaded{
@@ -158,15 +160,16 @@ body{
 
 .clear{
     width: 670px;
+    margin-left: 70px;
 }
 
 .model-structure-list{
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap
-
-    
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
+
 .model-structure-list__item{
     width: 347px;
     height: 253px;
@@ -177,12 +180,16 @@ body{
     font-size: 17px;
 }
 .section-get-in-touch{
-  width: 100%;
+    width: 100%;
     padding: 30px 50px;
-    font-size: 20px;
+    font-size: 19px;
     background-color: #3cd5af;
     text-decoration: none;
     color: #fff;
+     display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-top: 80px;
 }
 .section{
     text-decoration: none;
@@ -191,4 +198,93 @@ body{
 }
 .col-md{
   text-decoration: none;
+
+}
+.col-md{
+   border: 2px solid #fff;
+   padding: 11px 23px;
+   color: #fff;
+
+}
+.tech-expertise-section{
+    margin: 30px 45px 30px;
+    font-size: 21px;
+}
+.model-structure-list__item{
+  border: 1px solid #ccc;
+
+}
+.slider-table{
+  width: 200px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  padding: 10px 0 70px 10px;
+}
+.slider-image{
+  width: 25%;
+  margin-bottom: 10px;
+}
+#slider{
+  display: flex;
+  margin-left: 30px;
+}
+.slider-touch{
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.slider-heading{
+  font-size: 14px;
+  line-height: 22px;
+}
+.h2{
+  padding: 120px 0 30px 41px
+}
+
+.h2-img{
+  width: 116px;
+  margin-left: 50px;
+}
+.software{
+  padding: 60px 0px 50px 32px;
+  font-family: "Open Sans",Arial;
+  
+}
+.software-section{
+  padding-top: 30px;
+}
+.software-info-item{
+  padding-top: 20px;
+  font-size: 14px;
+    width: 455px;
+    margin-bottom: 1.2em;
+}
+.software-info-boder{
+  font-size: 14px;
+  width: 455px;
+}
+
+hr{
+  max-width: 30%;
+    margin-left: 0;
+    margin-bottom: 17px;
+    border: none;
+    color: #45daba;
+    background-color: #45daba;
+    height: 1px;
+    
+}
+.software-info-description{
+     margin-left: 550px;
+     font-size: 18px; 
+     display: flex; 
+}
+
+.software-child{
+  display: flex;
+  line-height: 22px;
+}
+
+.software-child-nav{
+  margin-left: 30px;
 }
