@@ -360,16 +360,13 @@ hr{
   margin-left: 25px;
   margin-left: 20px;
   padding-top: 25px;
+  margin-left: 36px;
   
 }
 .subtitle{
 
   color: #fff;
   font-size: 20px;
-}
-.logo-src{
-
-  
 }
 
 #logo-block{
@@ -384,7 +381,6 @@ hr{
   height: 66px;
   padding: 0 15px;
    vertical-align: middle;
-
 }
 
 .table-img-nav{
@@ -406,6 +402,7 @@ hr{
   background-color: #fff;
   margin-left: 36px;
   box-shadow: 0 11px 23px 2px rgb(38 55 69 / 30%);
+  margin-top: -360px;
 
 }
 .form-label{
@@ -427,4 +424,81 @@ hr{
   
 }
 
+.form-label{
+  border: none;
+  border-bottom: 1px solid #d8e1e9;
+  width: 100%;
+
+}
+
+.req-checkbox{
+  color: red;
+  font-weight: bold;
+  margin-right: 2px;
+  
+}
+
+.checkbox{
+  margin-left: 40px;
+  
+}
+.wpcf7-list-item{
+  font-size: 13px;
+}
+
+.bottom-fields{
+  margin-bottom: 24px;
+  margin-left: 10px;
+}
+
+.check-box{
+  display: flex;
+}
+
+.sidebar{
+line-height: 37px;
+
+}
+.privacy{
+  background: -webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat;
+  background-size: 0 27%, 100% 2px;
+  background-position: -100% 60%, 0 bottom;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+
+}
+
+.footer{
+  width: 600%;
+  margin-top: 300px;
+  background-color: #243746;
+  padding: 30px 0 20px;
+  margin-top: 32px;
+  color: #fff;
+  padding: 160px;
+
+
+}
+
+.footer-logo-wrap{
+  display: flex;
+
+}
+
+.footer-partners{
+  width: 60px;
+  display: flex;
+}
+
+.logo{
+  width: 160px;
+}
+
+.footer-logo{
+  margin-top: -140px;
+  margin-left: -100px;
+  height: 120px;
+
+}
 
