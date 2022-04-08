@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Open Sans",Arial;
+  font-family: "Open Sans", Arial;
 }
-body{
-    
+body {
 }
 #main {
-    background: url(./img/blockchain-services-for-fintech-1920x800\ \(2\).png);
-    height: 800px;
+  background: url(/img/blockchain-services-for-fintech-1920x800\ \(2\).png);
+  height: 800px;
 }
 
 #header {
@@ -61,6 +60,11 @@ body{
   padding: 10px 1px;
 }
 
+.search-btn:hover {
+  background-color: #fff;
+  color: #3cd5af;
+}
+
 .search-btn {
   text-decoration: none;
   padding: 6px 11px;
@@ -70,100 +74,107 @@ body{
   border: 2px solid #3cd5af;
 }
 
-.search-content{
-    padding-left: 20px;
+.search-content {
+  padding-left: 20px;
 }
 
-.search-eng{
-    list-style-type: none;
-    color: aliceblue;
+.search-eng {
+  list-style-type: none;
+  color: aliceblue;
 }
 
-.header-nav{
-    padding: 0px 20px;
+.search-eng:hover {
+  color: #3cd5af;
 }
 
-.color{
-    color: rgba(255,255,255,0.43);
+.header-nav {
+  padding: 0px 20px;
 }
 
-.h1{
-    color: #fff;
-    padding: 183px 0 30px 14px;
-    font-size: 44px;
-    max-width: 616px;
-    font-family: "Play",Arial;
-    
-
-}
-.artitle{
-    color: #fff;
-    padding: 0px 0px 0px 21px;
-    font-size: 13px;
-    max-width: 582px;
-    line-height: 22px;
-    font-family: "Open Sans",Arial;
+.color {
+  color: rgba(255, 255, 255, 0.43);
 }
 
-.call{
-     padding: 0px 0px 0px 15px;
+.h1 {
+  color: #fff;
+  padding: 183px 0 30px 14px;
+  font-size: 44px;
+  max-width: 616px;
+  font-family: "Play", Arial;
 }
 
-.btn-lear{
-    padding: 11px 23px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 17px;
-    line-height: 150px;
-    background-color: #3cd5af;
+.artitle {
+  color: #fff;
+  padding: 0px 0px 0px 21px;
+  font-size: 13px;
+  max-width: 582px;
+  line-height: 22px;
+  font-family: "Open Sans", Arial;
 }
 
-.head-sect{
-    color: #3cd5af;
-    font-size: 22px;
-    padding-left: 15px;
-    float: right;
-    padding-right: 550px;
-
-}
-.trusted-section{
-    width: 100%;
-    padding: 50px;
+.call {
+  padding: 0px 0px 0px 15px;
 }
 
-.lazy{
-    
-     margin-left: 100px; 
+.btn-lear {
+  padding: 11px 23px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 150px;
+  background-color: #3cd5af;
 }
 
-.lazy-loaded{
-    margin: -30px 50px;
-
-}
-.slick-list{
-    display: flex;
-    justify-content: space-between;
-    padding: 26px
+.btn-lear:hover {
+  background-color: #fff;
+  color: #3cd5af;
 }
 
-.container-clear{
-    font-size: 42px;
-    font-family: "Play",Arial;
-    display: block;
+.head-sect {
+  color: #3cd5af;
+  font-size: 22px;
+  padding-left: 15px;
+  float: right;
+  padding-right: 550px;
 }
 
-.container{
-    padding: 0px 42px 20px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    
-}   
+.trusted-section {
+  width: 100%;
+  padding: 50px;
+}
 
-.clear{
-    width: 66.5%;
-    height: 250px;
-    overflow: scroll;
-    /* margin-left: 70px; */
+.lazy {
+  margin-left: 100px;
+}
+
+.lazy-loaded {
+  margin: -30px 50px;
+}
+
+.slick-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 26px;
+}
+
+.container-clear {
+  font-size: 42px;
+  font-family: "Play", Arial;
+  display: block;
+}
+
+.container {
+  padding: 0px 42px 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clear {
+  width: 66.5%;
+  height: 250px;
+  overflow: scroll;
+  /* margin-left: 70px; */
 }
 
 /* .model-structure-list{
@@ -173,101 +184,113 @@ body{
     margin-top: 40px;
 } */
 
-.model-structure-list__item{
-    width: 33.3%;
-    height: 250px;
-    text-align: center;
+.model-structure-list__item {
+  width: 33.3%;
+  height: 250px;
+  text-align: center;
 }
 
-.h1-model{
-    font-size: 17px;
+.h1-model {
+  font-size: 17px;
 }
-.section-get-in-touch{
-    width: 100%;
-    padding: 30px 50px;
-    font-size: 19px;
-    background-color: #3cd5af;
-    text-decoration: none;
-    color: #fff;
-     display: flex;
-    justify-content: space-between;
-    font-weight: 600;
-    margin-top: 80px;
-}
-.section{
-    text-decoration: none;
-    color: #fff;
 
-}
-.col-md{
+.section-get-in-touch {
+  width: 100%;
+  padding: 30px 50px;
+  font-size: 19px;
+  background-color: #3cd5af;
   text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 80px;
+}
 
+.section {
+  text-decoration: none;
+  color: #fff;
 }
-.col-md{
-   border: 2px solid #fff;
-   padding: 11px 23px;
-   color: #fff;
 
+.col-md:hover {
+  background-color: #fff;
+  color: #3cd5af;
 }
-.tech-expertise-section{
-    margin: 30px 45px 30px;
-    font-size: 21px;
+
+.col-md {
+  border: 2px solid #fff;
+  text-decoration: none;
+  padding: 11px 23px;
+  color: #fff;
 }
-.model-structure-list__item{
+
+.tech-expertise-section {
+  margin: 30px 45px 30px;
+  font-size: 21px;
+}
+
+.model-structure-list__item {
   border: 1px solid #ccc;
-
 }
-.slider-table{
+.slider-table {
   width: 200px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
   margin-left: 15px;
   padding: 10px 0 70px 10px;
 }
-.slider-image{
+
+.slider-image {
   width: 25%;
   margin-bottom: 10px;
 }
-#slider{
+
+#slider {
   display: flex;
   margin-left: 30px;
 }
-.slider-touch{
+
+.slider-touch {
   font-size: 18px;
   padding-bottom: 10px;
 }
-.slider-heading{
+
+.slider-heading {
   font-size: 14px;
   line-height: 22px;
 }
-.h2{
-  padding: 120px 0 30px 41px
+
+.h2 {
+  padding: 120px 0 30px 41px;
 }
 
-.h2-img{
+.h2-img {
   width: 116px;
   margin-left: 50px;
 }
-.software{
+
+.software {
   padding: 100px 0px 50px 32px;
-  font-family: "Open Sans",Arial;
-  
+  font-family: "Open Sans", Arial;
 }
-.software-section{
+
+.software-section {
   padding-top: 30px;
 }
-.software-info-item{
+
+.software-info-item {
   padding-top: 20px;
   font-size: 14px;
   width: 455px;
   margin-bottom: 1.2em;
 }
-.software-info-boder{
+
+.software-info-boder {
   font-size: 14px;
   width: 455px;
 }
 
-hr{
+hr {
   max-width: 30%;
   margin-left: 0;
   margin-bottom: 17px;
@@ -275,44 +298,47 @@ hr{
   color: #45daba;
   background-color: #45daba;
   height: 1px;
-    
-}
-.software-info-description{
-     margin-left: 550px;
-     font-size: 18px; 
-     display: flex; 
 }
 
-.software-child{
+.software-info-description {
+  margin-left: 550px;
+  font-size: 18px;
+  display: flex;
+}
+
+.software-child {
   display: flex;
   line-height: 22px;
 }
 
-.software-child-nav{
+.software-child-nav {
   margin-left: 30px;
 }
-.single-post__slider{
-  margin-left: 16px;
+
+#single-post__slider {
+  display: flex;
+  height: 300px;
+  color: #fff;
 }
 
-.hover-styles{
+.hover-styles {
   background: url(./img/Combining-AI-and-Blockchain-370x240.jpeg) no-repeat;
   width: 100%;
   margin: 0 12px;
 }
-.blog-post{
+
+.blog-post {
   display: flex;
   height: 300px;
   color: #fff;
-
 }
-.news-image-wrap{
+.news-image-wrap {
   margin-top: 100px;
   margin-left: 24px;
   width: 250px;
 }
 
-.news__item-cat{
+.news__item-cat {
   margin-top: 16px;
   margin-left: 20px;
   margin-top: 16px;
@@ -321,81 +347,101 @@ hr{
   width: 20%;
   font-size: 12px;
   margin: 20px 20px 0px 20px;
-
 }
 
-.hover-styles-cat{
-  background: url(img/smart-contracts-for-fintech-370x240.jpeg) no-repeat;
+.news__item-cat:hover {
+  opacity: 0.6;
+  color: #000;
+}
+
+.hover-styles-cat {
+  z-index: 1000;
+  /* background: url(img/smart-contracts-for-fintech-370x240.jpeg) no-repeat; */
   width: 100%;
   margin: 0 12px;
+  position: relative;
 }
 
-.hover-styles-item{
+.dfdf {
+  position: absolute;
+  top: 0px;
+}
+
+.blog-post:hover .hover-styles-cat img {
+  transform: scale(1.1);
+}
+
+/* .hover-styles-cat img:hover{
+  transform: scale(1.1);
+}  */
+
+.hover-styles-item {
   background: url(img/blockchain-in-automotive-370x240.jpeg) no-repeat;
   width: 100%;
   margin: 0 12px;
 }
 
-.read-page-link{
-  margin-left: 1000px;
+.read-page-link {
+  text-align: right;
+  padding-right: 40px;
   width: 100%;
 }
-.read-page{
+
+.read-page {
   text-decoration: none;
   color: #3cd5af;
   font-size: 18px;
-  
 }
 
-.section-call-to-action{
+.section-call-to-action {
   background-color: #3cd5af;
   max-width: 950px;
   margin-top: 100px;
   margin-left: 15px;
-  
 }
-.section-call{
+
+.section-call {
   color: #fff;
   font-size: 40px;
   margin-left: 25px;
   margin-left: 20px;
   padding-top: 25px;
   margin-left: 36px;
-  
 }
-.subtitle{
 
+.subtitle {
   color: #fff;
   font-size: 20px;
 }
 
-#logo-block{
+#logo-block {
   display: flex;
   flex-wrap: wrap;
   width: 290px;
   margin-top: 50px;
 }
 
-.table-img{
+.table-img {
   margin-bottom: 30px;
   height: 66px;
   padding: 0 15px;
-   vertical-align: middle;
+  vertical-align: middle;
 }
 
-.table-img-nav{
-  width: 66px;  
+.table-img-nav {
+  width: 66px;
 }
 
-.subtitle{
+.subtitle {
   margin: 24px;
 }
-.section-call-to-action__logos{
+
+.section-call-to-action__logos {
   margin-left: 600px;
   margin-top: 50px;
 }
 
-.wpcf7{
+.wpcf7 {
   width: 550px;
   padding: 18px 24px 55px 33px;
   height: 600px;
@@ -403,15 +449,16 @@ hr{
   margin-left: 36px;
   box-shadow: 0 11px 23px 2px rgb(38 55 69 / 30%);
   margin-top: -360px;
-
 }
-.form-label{
+
+.form-label {
   border-bottom: 1px solid #d8e1e9;
   height: 72px;
   color: #b5b7b7;
+  font-size: 13px;
 }
 
-.form-label{
+.form-label {
   width: 100%;
   display: block;
   position: relative;
@@ -421,84 +468,213 @@ hr{
   margin-bottom: 25px;
   z-index: 100;
   word-break: break-all;
-  
 }
 
-.form-label{
+.form-label {
   border: none;
   border-bottom: 1px solid #d8e1e9;
   width: 100%;
-
 }
 
-.req-checkbox{
+.req-checkbox {
   color: red;
   font-weight: bold;
   margin-right: 2px;
-  
 }
 
-.checkbox{
+.checkbox {
   margin-left: 40px;
-  
 }
-.wpcf7-list-item{
+
+.wpcf7-list-item {
   font-size: 13px;
 }
 
-.bottom-fields{
+.bottom-fields {
   margin-bottom: 24px;
   margin-left: 10px;
 }
 
-.check-box{
+.check-box {
   display: flex;
 }
 
-.sidebar{
-line-height: 37px;
-
+.sidebar {
+  line-height: 37px;
 }
-.privacy{
-  background: -webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat;
+
+.privacy {
+  background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#3cd5af),
+        to(#3cd5af)
+      )
+      no-repeat,
+    -webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat;
   background-size: 0 27%, 100% 2px;
   background-position: -100% 60%, 0 bottom;
   text-decoration: none;
   color: #000;
   font-size: 13px;
-
+  display: inline-block;
 }
 
-.footer{
-  width: 600%;
-  margin-top: 300px;
+.footer {
   background-color: #243746;
   padding: 30px 0 20px;
   margin-top: 32px;
   color: #fff;
-  padding: 160px;
-
-
+  
 }
 
-.footer-logo-wrap{
+.footer-logo-nav {
   display: flex;
-
 }
 
-.footer-partners{
+.footer-partners {
   width: 60px;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 218px;
+  margin-left: -9px;
+}
+
+.footer-logo-item {
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 30%;
+  padding: 0 48px;
+  margin-top: 36px;
+  line-height: 42px;
+  font-size: 12px;
+}
+
+.social {
   display: flex;
+  list-style-type: none;
 }
 
-.logo{
-  width: 160px;
+.footer-locations__item-description {
+  color: #fff;
 }
 
-.footer-logo{
-  margin-top: -140px;
-  margin-left: -100px;
-  height: 120px;
-
+.social-container {
+  margin-top: 25px;
 }
 
+.footer-locations__item {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-locations__item-title{
+  font-size: 18px;
+}
+
+.footer-locations-title {
+  color: #fff;
+  background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#3cd5af),
+        to(#3cd5af)
+      )
+      no-repeat,
+    -webkit-gradient(linear, left top, left bottom, from(#3cd5af), to(#3cd5af)) no-repeat;
+  background-size: 0 27%, 100% 2px;
+  background-position: -100% 60%, 0 bottom;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-logo-wrap {
+  display: flex;
+  padding-left: 12px;
+}
+
+.footer-locations__item:hover{
+  transition: 0.2s all;
+  color: #3cd5af;
+}
+
+.footer-locations-title:hover{
+  transition: 0.2s all;
+  color: #3cd5af;
+}
+
+
+
+.menu-item {
+  padding: 0 10px;
+  font-size: 25px;
+}
+
+.btn-clear-nav {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.btn-clear-navv {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 52px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.btn-clear {
+  border: 2px solid #3cd5af;
+  padding: 12px;
+  margin-right: 40px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-clear-navnav {
+  margin-top: 25px;
+}
+
+.footer-logo-with {
+  padding: 24px;
+}
+
+.btn-clear-nav :hover {
+  color: #fff;
+}
+
+.btn-clear:hover {
+  background-color: #3cd5af;
+  transition: 0.2s all;
+  border-color: #3cd5af;
+}
+
+.textwidget{
+  border-top: 1px solid #4a5f6f;
+  margin-top: 40px;
+  padding: 17px;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  color: #8a9ba8;
+}
+
+.col-xs{
+  text-decoration: none;
+  color: #8a9ba8;
+}
+
+.col-xs:hover{
+  text-decoration: underline;
+  color: #fff;
+}
